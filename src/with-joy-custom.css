@@ -92,7 +92,17 @@ div[data-layer="back"] > div::before,
 div[data-layer="back"] > div::after {
   position: fixed;
   background-size: cover;
-  animation: fade-in 7s 1 ease-in-out;
+  animation-composition: add;
+}
+div[data-layer="back"]::before,
+div[data-layer="back"] > div::before {
+  animation: fade-in 7s 1 ease-in-out,
+    floral-breathe-t 40s infinite 0s ease-in-out;
+}
+div[data-layer="back"]::after,
+div[data-layer="back"] > div::after {
+  animation: fade-in 7s 1 ease-in-out,
+    floral-breathe-b 40s infinite 0s ease-in-out;
 }
 div[data-layer="back"]::before,
 div[data-layer="back"]::after {
@@ -105,10 +115,11 @@ div[data-layer="back"]::before {
   transform: rotate(70deg);
 }
 div[data-layer="back"]::after {
-  bottom: -10%;
-  right: -13%;
+  bottom: 6%;
+  right: -24%;
   transform: rotate(-70deg);
   animation-delay: 0.5s;
+  transform-origin: bottom;
 }
 div[data-layer="back"] > div::before {
   top: -23%;
@@ -143,7 +154,7 @@ div[class*=" EventNameNavstyles__StyledTitle"] {
   justify-content: center;
   align-items: center;
   animation: fade-in 7s 1 2s ease-in-out,
-    ring-breathe 40s infinite 9s ease-in-out;
+    ring-breathe 40s infinite 0s ease-in-out;
 }
 div[class*=" EventNameNavstyles__StyledTitle"] > p {
   font-family: "Alex Brush", cursive;
@@ -153,7 +164,7 @@ div[class*=" EventNameNavstyles__StyledTitle"] > p {
   font-size: 6.5rem;
   line-height: 0.89;
   animation: fade-in 7s 1 2s ease-in-out,
-    title-breathe 40s infinite 9s ease-in-out;
+    title-breathe 40s infinite 0s ease-in-out;
 }
 
 /* Nav */
@@ -245,6 +256,40 @@ div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
   }
   75% {
     transform: scale(0.975) rotate(3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes floral-breathe-t {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.04) rotate(-5deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.04) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes floral-breathe-b {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.04) rotate(5deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.04) rotate(-5deg);
   }
   100% {
     transform: scale(1) rotate(0deg);
