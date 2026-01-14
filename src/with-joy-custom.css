@@ -1,0 +1,164 @@
+/* Vars and common page elements */
+@font-face {
+  font-family: "roxborough-cf";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("https://wedding-website-one-olive.vercel.app/fonts/roxborough-cf-regular.woff2")
+      format("woff2"),
+    url("https://wedding-website-one-olive.vercel.app/fonts/roxborough-cf-regular.woff")
+      format("woff");
+}
+* {
+  --grey-purple: #674d98;
+}
+p[class*=" Textstyles"],
+a[class*=" Textstyles"] {
+  font-family: "roxborough-cf", "Cinzel", sans-serif;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  background-color: var(--grey-purple);
+  color: #fff;
+  font-family: "roxborough-cf", "Cinzel", sans-serif;
+}
+button > a {
+  color: #fff !important;
+  text-decoration: none !important;
+  padding: 1rem;
+}
+div[class*=" AiBorderBoxstyles"] div:not(:first-of-type) {
+  background-color: var(--grey-purple) !important;
+}
+button svg path[stroke] {
+  stroke: #fff !important;
+}
+button svg path[fill] {
+  fill: #fff !important;
+}
+/* Page background */
+div[data-layer="back"] {
+  background-image: url("https://wedding-website-one-olive.vercel.app/images/background-blue.webp") !important;
+}
+div[data-layer="middle"] {
+  background-color: unset !important;
+}
+/* Title banner */
+div[data-component="title-banner"] > div > div,
+div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/background-chalk.webp);
+  background-size: cover;
+}
+div[data-component="title-banner"] > div > div {
+  background-position: 1rem center;
+}
+div[class*=" EventNameNavstyles__StyledTitle"] {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/gold-hexagon-shaped_rings-with-purple-flowers.webp);
+  aspect-ratio: 1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 7s 1 0s ease-in-out,
+    ring-breathe 40s infinite 7s ease-in-out;
+}
+div[class*=" EventNameNavstyles__StyledTitle"] > p {
+  font-family: "Alex Brush", cursive;
+  color: var(--grey-purple);
+  display: block;
+  max-width: 250px;
+  font-size: 6.5rem;
+  line-height: 0.89;
+  animation: fade-in 7s 1 0s ease-in-out,
+    title-breathe 40s infinite 7s ease-in-out;
+}
+/* Nav */
+/* RSVP */
+div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 13.5rem;
+  padding-top: 13.5rem;
+  margin-top: 3rem;
+  position: relative;
+}
+div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before,
+div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: cover;
+}
+div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/vibrant-blue-flowers-facing-down.webp);
+  top: -4rem;
+  left: -1rem;
+  width: 54%;
+  height: 54%;
+}
+div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/faded-blue-flowers-facing-up.webp);
+  bottom: 0rem;
+  right: -4.5rem;
+  width: 45%;
+  height: 54%;
+  transform: rotate(-40deg);
+}
+/* Story */
+/* Where to Stay */
+/* Schedule */
+/* Registry */
+/* Travel */
+/* Q&A */
+/* Wedding Party */
+/* Moments */
+/* Get the app */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ring-breathe {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.025) rotate(3deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.025) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes title-breathe {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(0.975) rotate(-3deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(0.975) rotate(3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
