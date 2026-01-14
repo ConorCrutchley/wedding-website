@@ -16,6 +16,9 @@ p[class*=" Textstyles"],
 a[class*=" Textstyles"] {
   font-family: "roxborough-cf", "Cinzel", sans-serif;
 }
+#accommodations div {
+  font-family: "roxborough-cf", "Cinzel", sans-serif !important;
+}
 button,
 [type="button"],
 [type="reset"],
@@ -38,24 +41,100 @@ button svg path[stroke] {
 button svg path[fill] {
   fill: #fff !important;
 }
-/* Page background */
-div[data-layer="back"] {
-  background-image: url("https://wedding-website-one-olive.vercel.app/images/background-blue.webp") !important;
-}
 div[data-layer="middle"] {
   background-color: unset !important;
 }
-/* Title banner */
+
+/* Elements with background images */
+/* Page background */
+div[data-layer="back"] {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/background-blue.webp) !important;
+}
+/* White chalk background */
 div[data-component="title-banner"] > div > div,
 div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
   background-image: url(https://wedding-website-one-olive.vercel.app/images/background-chalk.webp);
+}
+/* Gold hexagon background */
+div[class*=" EventNameNavstyles__StyledTitle"] {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/gold-hexagon-shaped=rings-with-purple-flowers.webp);
+}
+/* Vibrant flowers background */
+div[data-layer="back"]::before,
+div[data-layer="back"] > div::after,
+div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/vibrant-blue-flowers-facing-down.webp);
+}
+div[data-layer="back"] > div::before {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/vibrant-blue-flowers-facing-up.webp);
+}
+/* Faded flowers background */
+div[data-layer="back"]::after,
+div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/faded-blue-flowers-facing-up.webp);
+}
+
+/* Pseudo elements */
+div[data-layer="back"]::before,
+div[data-layer="back"]::after,
+div[data-layer="back"] > div::before,
+div[data-layer="back"] > div::after,
+div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before,
+div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
+  content: "";
+  display: block;
+}
+
+/* Page background */
+div[data-layer="back"]::before,
+div[data-layer="back"]::after,
+div[data-layer="back"] > div::before,
+div[data-layer="back"] > div::after {
+  position: fixed;
+  background-size: cover;
+  animation: fade-in 7s 1 ease-in-out;
+}
+div[data-layer="back"]::before,
+div[data-layer="back"]::after {
+  width: 30%;
+  height: 50%;
+}
+div[data-layer="back"]::before {
+  top: -10%;
+  left: -13%;
+  transform: rotate(70deg);
+}
+div[data-layer="back"]::after {
+  bottom: -10%;
+  right: -13%;
+  transform: rotate(-70deg);
+  animation-delay: 0.5s;
+}
+div[data-layer="back"] > div::before {
+  top: -23%;
+  right: -16%;
+  width: 30%;
+  height: 55%;
+  animation-delay: 1s;
+}
+div[data-layer="back"] > div::after {
+  bottom: -38%;
+  left: -16.5%;
+  width: 34%;
+  height: 63%;
+  transform: rotate(-16deg);
+  animation-delay: 1.5s;
+}
+
+/* Title banner */
+div[data-component="title-banner"] > div > div,
+div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
   background-size: cover;
 }
 div[data-component="title-banner"] > div > div {
   background-position: 1rem center;
 }
 div[class*=" EventNameNavstyles__StyledTitle"] {
-  background-image: url(https://wedding-website-one-olive.vercel.app/images/gold-hexagon-shaped_rings-with-purple-flowers.webp);
   aspect-ratio: 1;
   background-position: center;
   background-size: contain;
@@ -63,8 +142,8 @@ div[class*=" EventNameNavstyles__StyledTitle"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fade-in 7s 1 0s ease-in-out,
-    ring-breathe 40s infinite 7s ease-in-out;
+  animation: fade-in 7s 1 2s ease-in-out,
+    ring-breathe 40s infinite 9s ease-in-out;
 }
 div[class*=" EventNameNavstyles__StyledTitle"] > p {
   font-family: "Alex Brush", cursive;
@@ -73,10 +152,12 @@ div[class*=" EventNameNavstyles__StyledTitle"] > p {
   max-width: 250px;
   font-size: 6.5rem;
   line-height: 0.89;
-  animation: fade-in 7s 1 0s ease-in-out,
-    title-breathe 40s infinite 7s ease-in-out;
+  animation: fade-in 7s 1 2s ease-in-out,
+    title-breathe 40s infinite 9s ease-in-out;
 }
+
 /* Nav */
+
 /* RSVP */
 div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
   background-position: center;
@@ -88,35 +169,42 @@ div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
 }
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before,
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
-  content: "";
-  display: block;
   position: absolute;
   background-size: cover;
 }
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
-  background-image: url(https://wedding-website-one-olive.vercel.app/images/vibrant-blue-flowers-facing-down.webp);
   top: -4rem;
   left: -1rem;
   width: 54%;
   height: 54%;
 }
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
-  background-image: url(https://wedding-website-one-olive.vercel.app/images/faded-blue-flowers-facing-up.webp);
   bottom: 0rem;
   right: -4.5rem;
   width: 45%;
   height: 54%;
   transform: rotate(-40deg);
 }
+
 /* Story */
+
 /* Where to Stay */
+
 /* Schedule */
+
 /* Registry */
+
 /* Travel */
+
 /* Q&A */
+
 /* Wedding Party */
+
 /* Moments */
+
 /* Get the app */
+
+/* Animations */
 @keyframes fade-in {
   0% {
     opacity: 0;
