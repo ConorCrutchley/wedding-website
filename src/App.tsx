@@ -45,6 +45,79 @@ function App() {
         src="/images/vibrant-blue-flowers-facing-up.webp"
         alt="vibrant blue flowers facing up"
       />
+      <img src="/images/purple-flowers.webp" alt="purple flowers" />
+      <img
+        src="/images/dark-purple-flowers-pointing-up.webp"
+        alt="dark purple flowers pointing up"
+      />
+      <img
+        src="/images/light-purple-flowers-pointing-down.webp"
+        alt="light purple flowers pointing down"
+      />
+      <img
+        src="/images/dark-purple-flowers-lying-on-back-ltr.webp"
+        alt="dark purple flowers lying on back ltr"
+      />
+      <img
+        src="/images/dark-purple-flowers-lying-on-back-rtl.webp"
+        alt="dark purple flowers lying on back rtl"
+      />
+      <img
+        src="/images/dark-purple-flowers-lying-on-front-ltr.webp"
+        alt="dark purple flowers lying on front ltr"
+      />
+      <img
+        src="/images/dark-purple-flowers-lying-on-front-rtl.webp"
+        alt="dark purple flowers lying on front rtl"
+      />
+      <img
+        src="/images/dark-purple-flowers-sprouting-down-left.webp"
+        alt="dark purple flowers sprouting down left"
+      />
+      <img
+        src="/images/dark-purple-flowers-sprouting-down-right.webp"
+        alt="dark purple flowers sprouting down right"
+      />
+      <img
+        src="/images/dark-purple-flowers-sprouting-up-left.webp"
+        alt="dark purple flowers sprouting up left"
+      />
+      <img
+        src="/images/dark-purple-flowers-sprouting-up-right.webp"
+        alt="light purple flowers sprouting up right"
+      />
+      <img
+        src="/images/light-purple-flowers-lying-on-back-ltr.webp"
+        alt="light purple flowers lying on back ltr"
+      />
+      <img
+        src="/images/light-purple-flowers-lying-on-back-rtl.webp"
+        alt="light purple flowers lying on back rtl"
+      />
+      <img
+        src="/images/light-purple-flowers-lying-on-front-ltr.webp"
+        alt="light purple flowers lying on front ltr"
+      />
+      <img
+        src="/images/light-purple-flowers-lying-on-front-rtl.webp"
+        alt="light purple flowers lying on front rtl"
+      />
+      <img
+        src="/images/light-purple-flowers-sprouting-down-left.webp"
+        alt="light purple flowers sprouting down left"
+      />
+      <img
+        src="/images/light-purple-flowers-sprouting-down-right.webp"
+        alt="light purple flowers sprouting down right"
+      />
+      <img
+        src="/images/light-purple-flowers-sprouting-up-left.webp"
+        alt="light purple flowers sprouting up left"
+      />
+      <img
+        src="/images/light-purple-flowers-sprouting-up-right.webp"
+        alt="light purple flowers sprouting up right"
+      />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
