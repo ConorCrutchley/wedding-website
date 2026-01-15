@@ -84,7 +84,15 @@ div[data-layer="back"]::after,
 div[data-layer="back"] > div::before,
 div[data-layer="back"] > div::after,
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before,
-div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
+div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after,
+div[data-component="title-banner"] nav::before,
+div[data-component="title-banner"] nav::after,
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::before,
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::after,
+div[data-component="title-banner"] nav > ul::before,
+div[data-component="title-banner"] nav > ul::after,
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::before,
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::after {
   content: "";
   display: block;
 }
@@ -197,8 +205,6 @@ div[data-component="title-banner"] nav::before,
 div[data-component="title-banner"] nav::after,
 div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::before,
 div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::after {
-  content: "";
-  display: block;
   position: absolute;
   inset: -12%;
   top: -10%;
@@ -217,6 +223,32 @@ div[data-component="title-banner"] nav > ul,
 div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul {
   position: relative;
   z-index: 1;
+}
+
+div[data-component="title-banner"] nav > ul::before,
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::before,
+div[data-component="title-banner"] nav > ul::after,
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::after {
+  position: absolute;
+  background-size: contain;
+}
+div[data-component="title-banner"] nav > ul::before,
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::before {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/dark-purple-flowers-lying-on-front-rtl.webp);
+  width: 19rem;
+  height: 10rem;
+  top: -5rem;
+  left: -10rem;
+  transform: rotate(-20deg);
+}
+div[data-component="title-banner"] nav > ul::after,
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::after {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/light-purple-flowers-lying-on-back-ltr.webp);
+  top: -2.5rem;
+  right: -9.5rem;
+  width: 16rem;
+  transform: rotate(-44deg);
+  height: 9rem;
 }
 /* RSVP */
 div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
