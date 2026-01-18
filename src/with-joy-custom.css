@@ -65,16 +65,14 @@ div[class*=" EventNameNavstyles__StyledTitle"] {
 }
 /* Vibrant flowers background */
 div[data-layer="back"]::before,
-div[data-layer="back"] > div::after,
-div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
+div[data-layer="back"] > div::after {
   background-image: url(https://wedding-website-one-olive.vercel.app/images/vibrant-blue-flowers-facing-down.webp);
 }
 div[data-layer="back"] > div::before {
   background-image: url(https://wedding-website-one-olive.vercel.app/images/vibrant-blue-flowers-facing-up.webp);
 }
 /* Faded flowers background */
-div[data-layer="back"]::after,
-div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
+div[data-layer="back"]::after {
   background-image: url(https://wedding-website-one-olive.vercel.app/images/faded-blue-flowers-facing-up.webp);
 }
 
@@ -118,35 +116,43 @@ div[data-layer="back"] > div::after {
 }
 div[data-layer="back"]::before,
 div[data-layer="back"]::after {
-  width: 30%;
-  height: 50%;
+  width: 29.6rem;
+  height: 26.2rem;
 }
 div[data-layer="back"]::before {
-  top: -10%;
-  left: -13%;
+  top: -5.6rem;
+  left: -15.45rem;
   transform: rotate(70deg);
 }
 div[data-layer="back"]::after {
-  bottom: 6%;
-  right: -24%;
+  bottom: 3.35rem;
+  right: -28.55rem;
   transform: rotate(-70deg);
   animation-delay: 0.5s;
   transform-origin: bottom;
 }
 div[data-layer="back"] > div::before {
-  top: -23%;
-  right: -16%;
-  width: 30%;
-  height: 55%;
+  top: -12.95rem;
+  right: -19rem;
+  width: 34.2rem;
+  height: 30rem;
   animation-delay: 1s;
 }
 div[data-layer="back"] > div::after {
-  bottom: -38%;
-  left: -16.5%;
-  width: 34%;
-  height: 63%;
+  bottom: -21.45rem;
+  left: -19.6rem;
+  width: 38.45rem;
+  height: 34.5rem;
   transform: rotate(-16deg);
   animation-delay: 1.5s;
+}
+div[data-layer="back"] > div,
+div[data-layer="back"] > div > div {
+  position: relative;
+  z-index: 1;
+}
+div[data-layer="back"] > div > div {
+  width: calc(100% - 14rem);
 }
 
 /* Title banner */
@@ -154,11 +160,9 @@ div[data-component="title-banner"] {
   margin-bottom: 12rem;
 }
 div[data-component="title-banner"] > div > div {
-  background-position: 2rem center;
+  background-position: 3rem center;
   background-size: 94%;
-}
-div[data-component="title-banner"] > div > div {
-  background-position: 1rem center;
+  background-repeat: no-repeat;
 }
 div[class*=" EventNameNavstyles__StyledTitle"] {
   aspect-ratio: 1;
@@ -168,8 +172,9 @@ div[class*=" EventNameNavstyles__StyledTitle"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fade-in 7s 1 2s ease-in-out,
+  animation: fade-in 3s 1 2s ease-in-out,
     ring-breathe 40s infinite 0s ease-in-out;
+  max-width: 720px;
 }
 div[class*=" EventNameNavstyles__StyledTitle"] > p {
   font-family: "Alex Brush", cursive;
@@ -178,7 +183,7 @@ div[class*=" EventNameNavstyles__StyledTitle"] > p {
   max-width: 250px;
   font-size: 6.5rem;
   line-height: 0.89;
-  animation: fade-in 7s 1 2s ease-in-out,
+  animation: fade-in 3s 1 2s ease-in-out,
     title-breathe 40s infinite 0s ease-in-out;
 }
 
@@ -212,10 +217,11 @@ div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::after {
   background-size: 103% 215%;
   background-position: 50% 267%;
   z-index: 0;
+  transform: scaleX(-1);
 }
 div[data-component="title-banner"] nav::after,
 div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::after {
-  transform: rotate(180deg);
+  transform: rotate(180deg) scaleX(-1);
   top: -50%;
   bottom: 26%;
 }
@@ -234,26 +240,27 @@ div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::after {
 }
 div[data-component="title-banner"] nav > ul::before,
 div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::before {
-  background-image: url(https://wedding-website-one-olive.vercel.app/images/dark-purple-flowers-lying-on-front-rtl.webp);
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/dark-purple-flowers-lying-on-front-ltr.webp);
   width: 19rem;
   height: 10rem;
   top: -5rem;
-  left: -10rem;
-  transform: rotate(-20deg);
+  right: -10rem;
+  transform: rotate(20deg);
 }
 div[data-component="title-banner"] nav > ul::after,
 div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::after {
-  background-image: url(https://wedding-website-one-olive.vercel.app/images/light-purple-flowers-lying-on-back-ltr.webp);
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/light-purple-flowers-lying-on-back-rtl.webp);
   top: -2.5rem;
-  right: -9.5rem;
+  left: -9.5rem;
   width: 16rem;
-  transform: rotate(-44deg);
+  transform: rotate(44deg);
   height: 9rem;
 }
+
 /* RSVP */
 div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: 2rem center;
   background-repeat: no-repeat;
   padding-bottom: 13.5rem;
   padding-top: 13.5rem;
@@ -266,17 +273,37 @@ div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
   background-size: cover;
 }
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
-  top: -4rem;
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/light-purple-flowers-lying-on-front-rtl.webp);
+  top: 3rem;
   left: -1rem;
-  width: 54%;
-  height: 54%;
+  width: 19rem;
+  height: 10.5rem;
+  transform: rotate(-16deg);
+  transform-origin: right top;
 }
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
-  bottom: 0rem;
-  right: -4.5rem;
-  width: 45%;
-  height: 54%;
-  transform: rotate(-40deg);
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/dark-purple-flowers-lying-on-back-rtl.webp);
+  bottom: 15.4rem;
+  right: -5.5rem;
+  width: 20.8rem;
+  height: 10.8rem;
+  transform: rotate(-70deg);
+}
+div[data-layer="middle"] > .joykit-box:nth-of-type(2) > div {
+  justify-content: center;
+  align-items: center;
+}
+div[data-layer="middle"]
+  > .joykit-box:nth-of-type(2)
+  > div
+  > div:first-of-type {
+  display: none;
+}
+div[class*=" EventLogisticBlockstyles"] > div > div > p {
+  display: block;
+  max-width: 450px;
+  margin: 0 auto;
+  line-height: 1.5em;
 }
 
 /* Story */
@@ -296,6 +323,40 @@ div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
 /* Moments */
 
 /* Get the app */
+
+/* Media Queries */
+@media screen and (min-width: 64em) {
+  /* Page background */
+  div[data-layer="back"]::before,
+  div[data-layer="back"]::after {
+    width: 35.6rem;
+    height: 28.2rem;
+  }
+  div[data-layer="back"] > div::before {
+    width: 35.7rem;
+    height: 31rem;
+  }
+  div[data-layer="back"] > div::after {
+    width: 40.45rem;
+    height: 35.5rem;
+  }
+
+  /* RSVP */
+  div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
+    top: -3.5rem;
+    left: -5.5rem;
+    width: 23.5rem;
+    height: 12.9rem;
+    transform: rotate(-35deg);
+  }
+  div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
+    bottom: 12.4rem;
+    right: -6rem;
+    width: 25.8rem;
+    height: 13.8rem;
+    transform: rotate(-82deg);
+  }
+}
 
 /* Animations */
 @keyframes fade-in {
