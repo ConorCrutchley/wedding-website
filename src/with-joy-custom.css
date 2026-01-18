@@ -32,6 +32,9 @@ button > a {
   text-decoration: none !important;
   padding: 1rem;
 }
+button[class*=" MenuButtonstyles"] > div {
+  background-color: var(--grey-purple);
+}
 div[class*=" AiBorderBoxstyles"] div:not(:first-of-type) {
   background-color: var(--grey-purple) !important;
 }
@@ -43,6 +46,29 @@ button svg path[fill] {
 }
 div[data-layer="middle"] {
   background-color: unset !important;
+}
+div[class*=" EventMenu"] > div:first-of-type > p,
+div[class*=" EventNameNavstyles__StyledTitle"] > p {
+  font-family: "Alex Brush", cursive;
+  color: var(--grey-purple);
+}
+
+/* Mobile menu */
+div[class*=" Modalstyles"] > button[aria-label="Close"] {
+  top: 1.25rem;
+  right: 1rem;
+}
+div[class*=" EventMenu"] > div:nth-of-type(2) > div > button {
+  border-radius: 2rem;
+}
+div[class*=" EventMenu"] > div:nth-of-type(2) > div > button > div {
+  color: #fff;
+}
+div[class*=" EventMenu"] > div:first-of-type > p {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 2.5rem;
+  line-height: 1;
 }
 
 /* Elements with background images */
@@ -177,8 +203,6 @@ div[class*=" EventNameNavstyles__StyledTitle"] {
   max-width: 720px;
 }
 div[class*=" EventNameNavstyles__StyledTitle"] > p {
-  font-family: "Alex Brush", cursive;
-  color: var(--grey-purple);
   display: block;
   max-width: 250px;
   font-size: 6.5rem;
