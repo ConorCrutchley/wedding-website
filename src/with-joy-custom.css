@@ -4,7 +4,8 @@
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url("https://wedding-website-one-olive.vercel.app/fonts/roxborough-cf-regular.woff2")
+  src:
+    url("https://wedding-website-one-olive.vercel.app/fonts/roxborough-cf-regular.woff2")
       format("woff2"),
     url("https://wedding-website-one-olive.vercel.app/fonts/roxborough-cf-regular.woff")
       format("woff");
@@ -51,6 +52,9 @@ div[class*=" EventMenu"] > div:first-of-type > p,
 div[class*=" EventNameNavstyles__StyledTitle"] > p {
   font-family: "Alex Brush", cursive;
   color: var(--grey-purple);
+}
+#smart-app-banner button {
+  padding: 0.5rem 1rem;
 }
 
 /* Mobile menu */
@@ -132,18 +136,20 @@ div[data-layer="back"] > div::after {
 }
 div[data-layer="back"]::before,
 div[data-layer="back"] > div::before {
-  animation: fade-in 7s 1 ease-in-out,
+  animation:
+    fade-in 7s 1 ease-in-out,
     floral-breathe-t 40s infinite 0s ease-in-out;
 }
 div[data-layer="back"]::after,
 div[data-layer="back"] > div::after {
-  animation: fade-in 7s 1 ease-in-out,
+  animation:
+    fade-in 7s 1 ease-in-out,
     floral-breathe-b 40s infinite 0s ease-in-out;
 }
 div[data-layer="back"]::before,
 div[data-layer="back"]::after {
-  width: 29.6rem;
-  height: 26.2rem;
+  width: 26.6rem;
+  height: 23.2rem;
 }
 div[data-layer="back"]::before {
   top: -5.6rem;
@@ -151,8 +157,8 @@ div[data-layer="back"]::before {
   transform: rotate(70deg);
 }
 div[data-layer="back"]::after {
-  bottom: 3.35rem;
-  right: -28.55rem;
+  bottom: 1.35rem;
+  right: -25.55rem;
   transform: rotate(-70deg);
   animation-delay: 0.5s;
   transform-origin: bottom;
@@ -160,15 +166,15 @@ div[data-layer="back"]::after {
 div[data-layer="back"] > div::before {
   top: -12.95rem;
   right: -19rem;
-  width: 34.2rem;
-  height: 30rem;
+  width: 31.2rem;
+  height: 27rem;
   animation-delay: 1s;
 }
 div[data-layer="back"] > div::after {
   bottom: -21.45rem;
   left: -19.6rem;
-  width: 38.45rem;
-  height: 34.5rem;
+  width: 31.45rem;
+  height: 32.5rem;
   transform: rotate(-16deg);
   animation-delay: 1.5s;
 }
@@ -178,16 +184,17 @@ div[data-layer="back"] > div > div {
   z-index: 1;
 }
 div[data-layer="back"] > div > div {
-  width: calc(100% - 14rem);
+  max-width: 40rem;
 }
 
 /* Title banner */
 div[data-component="title-banner"] {
-  margin-bottom: 12rem;
+  background-color: transparent;
+  height: 85vh;
 }
 div[data-component="title-banner"] > div > div {
-  background-position: 3rem center;
-  background-size: 94%;
+  background-position: -1rem 6rem;
+  background-size: 115%;
   background-repeat: no-repeat;
 }
 div[class*=" EventNameNavstyles__StyledTitle"] {
@@ -198,16 +205,18 @@ div[class*=" EventNameNavstyles__StyledTitle"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fade-in 3s 1 2s ease-in-out,
+  animation:
+    fade-in 3s 1 2s ease-in-out,
     ring-breathe 40s infinite 0s ease-in-out;
   max-width: 720px;
 }
 div[class*=" EventNameNavstyles__StyledTitle"] > p {
   display: block;
-  max-width: 250px;
-  font-size: 6.5rem;
+  max-width: 135px;
+  font-size: 3.5rem;
   line-height: 0.89;
-  animation: fade-in 3s 1 2s ease-in-out,
+  animation:
+    fade-in 3s 1 2s ease-in-out,
     title-breathe 40s infinite 0s ease-in-out;
 }
 
@@ -250,11 +259,12 @@ div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::after {
   bottom: 26%;
 }
 div[data-component="title-banner"] nav > ul,
-div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul {
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul,
+div[data-component="title-banner"] nav > ul li,
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul li {
   position: relative;
   z-index: 1;
 }
-
 div[data-component="title-banner"] nav > ul::before,
 div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::before,
 div[data-component="title-banner"] nav > ul::after,
@@ -283,13 +293,20 @@ div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::after {
 
 /* RSVP */
 div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
-  background-size: 100%;
-  background-position: 2rem center;
-  background-repeat: no-repeat;
-  padding-bottom: 13.5rem;
-  padding-top: 13.5rem;
-  margin-top: 3rem;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.6)
+  );
+  border-radius: 1rem;
+  margin: 0 2rem;
+  /* background-size: 121%;
+  background-position: -1rem 0rem;
+  background-repeat: no-repeat; */
   position: relative;
+  padding-top: 7.5rem;
+  /* padding-bottom: 7.5rem; */
+  max-width: 900px;
 }
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before,
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
@@ -298,8 +315,25 @@ div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
 }
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
   background-image: url(https://wedding-website-one-olive.vercel.app/images/light-purple-flowers-lying-on-front-rtl.webp);
-  top: 3rem;
-  left: -1rem;
+  top: -4.5rem;
+  left: -7.5rem;
+  width: 14rem;
+  height: 7.5rem;
+  transform: rotate(-38deg);
+  transform-origin: right top;
+}
+div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/dark-purple-flowers-lying-on-back-rtl.webp);
+  bottom: 0.5rem;
+  right: -5.1rem;
+  width: 13.8rem;
+  height: 6.8rem;
+  transform: rotate(-73deg);
+}
+/* div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/light-purple-flowers-lying-on-front-rtl.webp);
+  top: -4rem;
+  left: -5rem;
   width: 19rem;
   height: 10.5rem;
   transform: rotate(-16deg);
@@ -307,12 +341,12 @@ div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
 }
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
   background-image: url(https://wedding-website-one-olive.vercel.app/images/dark-purple-flowers-lying-on-back-rtl.webp);
-  bottom: 15.4rem;
-  right: -5.5rem;
+  bottom: 9.1rem;
+  right: -7.1rem;
   width: 20.8rem;
   height: 10.8rem;
   transform: rotate(-70deg);
-}
+} */
 div[data-layer="middle"] > .joykit-box:nth-of-type(2) > div {
   justify-content: center;
   align-items: center;
@@ -349,6 +383,60 @@ div[class*=" EventLogisticBlockstyles"] > div > div > p {
 /* Get the app */
 
 /* Media Queries */
+@media screen and (min-width: 48em) {
+  /* Page background */
+  div[data-layer="back"] > div > div {
+    max-width: none;
+    width: calc(100% - 14rem);
+    height: auto;
+  }
+  div[data-layer="back"]::before,
+  div[data-layer="back"]::after {
+    width: 29.6rem;
+    height: 26.2rem;
+  }
+  div[data-layer="back"]::after {
+    bottom: 3.35rem;
+    right: -28.55rem;
+  }
+  div[data-layer="back"] > div::before {
+    width: 34.2rem;
+    height: 30rem;
+  }
+  div[data-layer="back"] > div::after {
+    width: 38.45rem;
+    height: 34.5rem;
+  }
+
+  /* Title Banner */
+  div[data-component="title-banner"] {
+    margin-bottom: 12rem;
+  }
+  div[data-component="title-banner"] > div > div {
+    background-position: 3rem center;
+    background-size: 94%;
+  }
+  div[class*=" EventNameNavstyles__StyledTitle"] > p {
+    max-width: 185px;
+    font-size: 5rem;
+  }
+
+  /* RSVP */
+  div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 60em) {
+  /* Page background */
+  div[data-layer="back"] > div > div {
+    max-width: 1024px;
+  }
+
+  /* RSVP */
+  div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
+    margin-top: 3rem;
+  }
+}
 @media screen and (min-width: 64em) {
   /* Page background */
   div[data-layer="back"]::before,
@@ -365,17 +453,26 @@ div[class*=" EventLogisticBlockstyles"] > div > div > p {
     height: 35.5rem;
   }
 
+  /* Title Banner */
+  div[class*=" EventNameNavstyles__StyledTitle"] > p {
+    max-width: 250px;
+    font-size: 6.5rem;
+  }
+
   /* RSVP */
+  div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
+    margin-top: 21rem;
+  }
   div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
-    top: -3.5rem;
-    left: -5.5rem;
+    top: -7.5rem;
+    left: -12.5rem;
     width: 23.5rem;
     height: 12.9rem;
     transform: rotate(-35deg);
   }
   div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
-    bottom: 12.4rem;
-    right: -6rem;
+    bottom: 1.4rem;
+    right: -11rem;
     width: 25.8rem;
     height: 13.8rem;
     transform: rotate(-82deg);
