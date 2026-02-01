@@ -2,7 +2,6 @@
 @font-face {
   font-family: "roxborough-cf";
   font-style: normal;
-  font-display: swap;
   font-weight: 400;
   src:
     url("https://wedding-website-one-olive.vercel.app/fonts/roxborough-cf-regular.woff2")
@@ -14,7 +13,13 @@
   --grey-purple: #674d98;
 }
 p[class*=" Textstyles"],
-a[class*=" Textstyles"] {
+a[class*=" Textstyles"],
+.jodit-editor h1,
+.jodit-editor h2,
+.jodit-editor h3,
+.jodit-editor h4,
+.jodit-editor h5,
+.jodit-editor h6 {
   font-family: "roxborough-cf", "Cinzel", sans-serif;
 }
 #accommodations div {
@@ -85,8 +90,7 @@ div[data-component="title-banner"] > div > div,
 div[data-component="title-banner"] nav::before,
 div[data-component="title-banner"] nav::after,
 div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::before,
-div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::after,
-div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
+div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::after {
   background-image: url(https://wedding-website-one-olive.vercel.app/images/background-chalk.webp);
 }
 /* Gold hexagon background */
@@ -185,6 +189,13 @@ div[data-layer="back"] > div > div {
 }
 div[data-layer="back"] > div > div {
   max-width: 40rem;
+}
+div[data-layer="middle"] > .joykit-box:nth-of-type(n + 2) {
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.6)
+  );
 }
 
 /* Title banner */
@@ -293,19 +304,10 @@ div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav > ul::after {
 
 /* RSVP */
 div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
-  background-image: linear-gradient(
-    -45deg,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.6)
-  );
   border-radius: 1rem;
   margin: 0 2rem;
-  /* background-size: 121%;
-  background-position: -1rem 0rem;
-  background-repeat: no-repeat; */
   position: relative;
   padding-top: 7.5rem;
-  /* padding-bottom: 7.5rem; */
   max-width: 900px;
 }
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before,
@@ -330,23 +332,6 @@ div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
   height: 6.8rem;
   transform: rotate(-73deg);
 }
-/* div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before {
-  background-image: url(https://wedding-website-one-olive.vercel.app/images/light-purple-flowers-lying-on-front-rtl.webp);
-  top: -4rem;
-  left: -5rem;
-  width: 19rem;
-  height: 10.5rem;
-  transform: rotate(-16deg);
-  transform-origin: right top;
-}
-div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after {
-  background-image: url(https://wedding-website-one-olive.vercel.app/images/dark-purple-flowers-lying-on-back-rtl.webp);
-  bottom: 9.1rem;
-  right: -7.1rem;
-  width: 20.8rem;
-  height: 10.8rem;
-  transform: rotate(-70deg);
-} */
 div[data-layer="middle"] > .joykit-box:nth-of-type(2) > div {
   justify-content: center;
   align-items: center;
@@ -424,6 +409,119 @@ div[class*=" EventLogisticBlockstyles"] > div > div > p {
   /* RSVP */
   div[data-layer="middle"] > .joykit-box:nth-of-type(2) {
     margin: 0 auto;
+  }
+
+  /* What To Expect */
+  div[data-layer="middle"] > .joykit-box:nth-of-type(3) {
+    padding-top: 0;
+    margin-top: 7.5em;
+  }
+  #what-to-expect div[class*=" Custom__ComponentsContainer"] .joykit-box {
+    order: initial;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(2n),
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(2n + 1):not(:first-of-type) {
+    width: calc(50% - 1.5em);
+    margin: 0;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(1) {
+    order: 1;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(2) {
+    order: 2;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(3) {
+    order: 3;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(4) {
+    order: 5;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(5) {
+    order: 4;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(6) {
+    order: 6;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(7) {
+    order: 7;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(8) {
+    order: 9;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(9) {
+    order: 8;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(10) {
+    order: 10;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(11) {
+    order: 11;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(12) {
+    order: 13;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(13) {
+    order: 12;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(14) {
+    order: 14;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(15) {
+    order: 15;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(16) {
+    order: 17;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(17) {
+    order: 16;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(18) {
+    order: 18;
+  }
+  #what-to-expect
+    div[class*=" Custom__ComponentsContainer"]
+    .joykit-box:nth-of-type(19) {
+    order: 19;
   }
 }
 @media screen and (min-width: 60em) {
