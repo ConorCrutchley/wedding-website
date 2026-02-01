@@ -118,6 +118,7 @@ function App() {
         src="/images/light-purple-flowers-sprouting-up-right.webp"
         alt="light purple flowers sprouting up right"
       />
+      <img src="/images/hotel-review-star.svg" alt="hotel review star" />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

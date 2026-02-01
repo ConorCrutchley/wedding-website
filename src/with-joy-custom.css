@@ -352,6 +352,23 @@ div[class*=" EventLogisticBlockstyles"] > div > div > p {
 /* Story */
 
 /* Where to Stay */
+a[class*=" HotelTileCardstyles"]
+  > .joykit-box:nth-of-type(2)
+  > .joykit-box:nth-of-type(2)
+  > div[class*=" Flex"]
+  > div[class*=" Flex"] {
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+.accommodations-note-text {
+  display: block;
+  padding: 0.25rem 0 0.75rem;
+}
+a[class*=" HotelTileCardstyles"] button[aria-label="More"] {
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  margin: 0 0 0 auto;
+}
 
 /* Schedule */
 
