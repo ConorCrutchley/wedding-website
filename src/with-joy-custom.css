@@ -350,6 +350,9 @@ div[class*=" EventLogisticBlockstyles"] > div > div > p {
 }
 
 /* Story */
+#story > div > div > div > div:first-of-type {
+  display: none;
+}
 
 /* Where to Stay */
 a[class*=" HotelTileCardstyles"]
@@ -359,6 +362,21 @@ a[class*=" HotelTileCardstyles"]
   > div[class*=" Flex"] {
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
+}
+#accommodations
+  div[class*=" Custom__ComponentsContainer"]
+  div[class*=" Skeletonstyles__StyledSkeletonContentRoot"]
+  > .joykit-box:nth-of-type(3)
+  > a[class*=" HotelTileCardstyles"]
+  > .joykit-box:nth-of-type(2)
+  > .joykit-box:nth-of-type(1)
+  > .joykit-box:nth-of-type(2)
+  > .joykit-box:nth-of-type(1)::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 17px;
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/hotel-review-star.svg);
 }
 .accommodations-note-text {
   display: block;
@@ -370,17 +388,11 @@ a[class*=" HotelTileCardstyles"] button[aria-label="More"] {
   margin: 0 0 0 auto;
 }
 
-/* Schedule */
-
-/* Registry */
-
 /* Travel */
 
 /* Q&A */
 
 /* Wedding Party */
-
-/* Moments */
 
 /* Get the app */
 
@@ -428,11 +440,13 @@ a[class*=" HotelTileCardstyles"] button[aria-label="More"] {
     margin: 0 auto;
   }
 
-  /* What To Expect */
+  /* Story */
   div[data-layer="middle"] > .joykit-box:nth-of-type(3) {
     padding-top: 0;
     margin-top: 7.5em;
   }
+
+  /* What To Expect */
   #what-to-expect div[class*=" Custom__ComponentsContainer"] .joykit-box {
     order: initial;
   }
