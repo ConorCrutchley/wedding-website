@@ -54,7 +54,8 @@ div[data-layer="middle"] {
   background-color: unset !important;
 }
 div[class*=" EventMenu"] > div:first-of-type > p,
-div[class*=" EventNameNavstyles__StyledTitle"] > p {
+div[class*=" EventNameNavstyles__StyledTitle"] > p,
+div[class*=" EventNameNavstyles__StyledTitle"] > h1 {
   font-family: "Alex Brush", cursive;
   color: var(--grey-purple);
 }
@@ -109,6 +110,14 @@ div[data-layer="back"] > div::before {
 div[data-layer="back"]::after {
   background-image: url(https://wedding-website-one-olive.vercel.app/images/faded-blue-flowers-facing-up.webp);
 }
+/* Light purple flowers */
+div[data-layer="middle"] > .joykit-box:nth-of-type(n + 3)::before {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/light-purple-flowers-lying-on-back-rtl.webp);
+}
+/* Dark purple flowers */
+div[data-layer="middle"] > .joykit-box:nth-of-type(n + 3)::after {
+  background-image: url(https://wedding-website-one-olive.vercel.app/images/dark-purple-flowers-lying-on-front-ltr.webp);
+}
 
 /* Pseudo elements */
 div[data-layer="back"]::before,
@@ -117,6 +126,10 @@ div[data-layer="back"] > div::before,
 div[data-layer="back"] > div::after,
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::before,
 div[data-layer="middle"] > .joykit-box:nth-of-type(2)::after,
+div[data-layer="middle"]
+  > .joykit-box:nth-of-type(n + 4):not(:last-of-type)::before,
+div[data-layer="middle"]
+  > .joykit-box:nth-of-type(n + 4):not(:last-of-type)::after,
 div[data-component="title-banner"] nav::before,
 div[data-component="title-banner"] nav::after,
 div[class*=" StickyNavBarstyles__StyledStickyContainer"] nav::before,
@@ -197,6 +210,27 @@ div[data-layer="middle"] > .joykit-box:nth-of-type(n + 2) {
     rgba(255, 255, 255, 0.6)
   );
 }
+div[data-layer="middle"] > .joykit-box:nth-of-type(n + 4):not(:last-of-type) {
+  position: relative;
+  padding-top: 15rem;
+}
+div[data-layer="middle"] > .joykit-box:nth-of-type(n + 4)::before,
+div[data-layer="middle"] > .joykit-box:nth-of-type(n + 4)::after {
+  position: absolute;
+  background-size: cover;
+  width: 22rem;
+  height: 11.5rem;
+  top: 4rem;
+}
+div[data-layer="middle"] > .joykit-box:nth-of-type(n + 4)::before {
+  width: 21rem;
+  left: calc(50% - 10.25rem);
+  transform: translateX(-50%) rotate(16deg);
+}
+div[data-layer="middle"] > .joykit-box:nth-of-type(n + 4)::after {
+  right: calc(50% - 10.25rem);
+  transform: translateX(50%);
+}
 
 /* Title banner */
 div[data-component="title-banner"] {
@@ -221,7 +255,8 @@ div[class*=" EventNameNavstyles__StyledTitle"] {
     ring-breathe 40s infinite 0s ease-in-out;
   max-width: 720px;
 }
-div[class*=" EventNameNavstyles__StyledTitle"] > p {
+div[class*=" EventNameNavstyles__StyledTitle"] > p,
+div[class*=" EventNameNavstyles__StyledTitle"] > h1 {
   display: block;
   max-width: 135px;
   font-size: 3.5rem;
@@ -430,7 +465,8 @@ a[class*=" HotelTileCardstyles"] button[aria-label="More"] {
     background-position: 3rem center;
     background-size: 94%;
   }
-  div[class*=" EventNameNavstyles__StyledTitle"] > p {
+  div[class*=" EventNameNavstyles__StyledTitle"] > p,
+  div[class*=" EventNameNavstyles__StyledTitle"] > h1 {
     max-width: 185px;
     font-size: 5rem;
   }
