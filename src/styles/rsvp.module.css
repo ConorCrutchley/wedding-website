@@ -1,0 +1,54 @@
+.rsvp-section {
+  position: relative;
+  margin: 5rem auto 10rem;
+  width: calc(100% - 3rem);
+  border-radius: 1rem;
+  padding: 5rem 2rem;
+  max-width: 800px;
+  background: var(--opaque-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.rsvp-address {
+  margin: 2rem 0;
+}
+.rsvp-address p {
+  margin: 0.25rem 0;
+}
+.rsvp-img {
+  position: absolute;
+}
+.rsvp-img-top-left {
+  top: -4.5rem;
+  left: -7.5rem;
+  width: 14rem;
+  height: 7.5rem;
+  transform: rotate(-38deg);
+  transform-origin: right top;
+}
+.rsvp-img-bottom-right {
+  bottom: 0.5rem;
+  right: -5.1rem;
+  width: 13.8rem;
+  height: 6.8rem;
+  transform: rotate(-73deg);
+}
+@media screen and (min-width: 64em) {
+  .rsvp-img-top-left {
+    top: -7.5rem;
+    left: -12.5rem;
+    width: 23.5rem;
+    height: 12.9rem;
+    transform: rotate(-35deg);
+  }
+  .rsvp-img-bottom-right {
+    bottom: 1.4rem;
+    right: -11rem;
+    width: 25.8rem;
+    height: 13.8rem;
+    transform: rotate(-82deg);
+  }
+}

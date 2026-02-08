@@ -1,0 +1,109 @@
+.bg-flower {
+  position: fixed;
+  z-index: -2;
+}
+.bg-top-left img,
+.bg-bottom-right img {
+  width: 26.6rem;
+  height: 23.2rem;
+}
+.bg-top-left img,
+.bg-top-right img {
+  animation: floral-breathe-t 30s ease-in-out 0s infinite;
+}
+.bg-bottom-left img,
+.bg-bottom-right img {
+  animation: floral-breathe-b 30s ease-in-out 0s infinite;
+}
+.bg-top-left {
+  top: -8.6rem;
+  left: -12.45rem;
+  transform: rotate(70deg);
+  animation: fade-in 1s ease-in-out 0s 1;
+}
+.bg-top-right {
+  top: -12.95rem;
+  right: -19rem;
+  width: 31.2rem;
+  height: 27rem;
+  animation: fade-in 2.5s ease-in-out 0s 1;
+}
+.bg-bottom-left {
+  bottom: -20rem;
+  left: -14rem;
+  width: 31.45rem;
+  height: 32.5rem;
+  transform: rotate(-16deg);
+  animation: fade-in 3.25s ease-in-out 0s 1;
+}
+.bg-bottom-right {
+  bottom: 1.35rem;
+  right: -25.55rem;
+  transform: rotate(-70deg);
+  animation: fade-in 1.75s ease-in-out 0s 1;
+  transform-origin: center bottom;
+}
+@media screen and (min-width: 48em) {
+  .bg-top-left img,
+  .bg-bottom-right img {
+    width: 29.6rem;
+    height: 26.2rem;
+  }
+  .bg-bottom-right {
+    bottom: 3.35rem;
+    right: -28.55rem;
+  }
+  .bg-top-right img {
+    width: 34.2rem;
+    height: 30rem;
+  }
+  .bg-bottom-left img {
+    width: 38.45rem;
+    height: 34.5rem;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes floral-breathe-t {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.04) rotate(-5deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.04) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes floral-breathe-b {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.04) rotate(5deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.04) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}

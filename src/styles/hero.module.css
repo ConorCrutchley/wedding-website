@@ -1,0 +1,71 @@
+.hero-section {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-section img {
+  position: absolute;
+  width: 100%;
+  max-width: 720px;
+  object-fit: cover;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+img.hero-chalk {
+  width: 110%;
+  max-width: 820px;
+}
+img.hero-hexagons {
+  animation:
+    fade-in 4s ease-in-out 0s 1,
+    ring-breathe 30s infinite 0s ease-in-out;
+}
+.hero-section h1 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: block;
+  max-width: 135px;
+  font-size: 3.5rem;
+  line-height: 0.89;
+  animation: fade-in 5.5s ease-in-out 0s 1;
+}
+@media (min-width: 48em) {
+  .hero-section h1 {
+    max-width: 185px;
+    font-size: 5rem;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ring-breathe {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) scale(1.025) rotate(3deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) scale(1.025) rotate(-3deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+}
