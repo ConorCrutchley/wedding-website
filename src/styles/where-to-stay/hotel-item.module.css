@@ -1,0 +1,53 @@
+.hotel-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hotel-stats,
+.hotel-stats span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hotel-stats span {
+  gap: 0.25rem;
+}
+.hotel-prices {
+  display: flex;
+  justify-content: space-between;
+}
+.hotel-prices-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: right;
+}
+.event-only-rate {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+.event-only-rate span {
+  color: rgb(0, 146, 137);
+}
+.price-savings {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.full-price {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.save-badge {
+  background: rgb(235, 255, 232);
+  color: rgb(0, 146, 137);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+.book-now {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
