@@ -109,7 +109,12 @@ const PageLinks = () => {
         const displayText =
           sectionKey === "rsvp"
             ? "RSVP"
-            : sectionKey.charAt(0).toUpperCase() + sectionKey.slice(1);
+            : sectionKey === "faqs"
+              ? "FAQs"
+              : sectionKey
+                  .split("-")
+                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                  .join(" ");
         return (
           <li key={`navbar_pagelink_${sectionId}`}>
             <a
