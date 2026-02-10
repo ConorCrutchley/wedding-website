@@ -8,14 +8,15 @@ import { renderToStaticMarkup } from "react-dom/server";
 import styles from "@/styles/where-to-stay/hotel-map.module.css";
 
 const HotelMap = () => {
+  const centerCoord: LatLngTuple = [51.35710853465936, -0.11678750410152501];
   const venueCoord: LatLngTuple = [51.35617754848806, -0.11968815767081438];
 
   return (
     <MapContainer
       id="map"
       className={styles["hotel-map"]}
-      center={venueCoord}
-      zoom={16}
+      center={centerCoord}
+      zoom={17}
       scrollWheelZoom={false}
     >
       <TileLayer
@@ -30,6 +31,7 @@ const HotelMap = () => {
       {hotels.map((hotel) => {
         const iconElement = (
           <>
+            <p>{hotel.shortName}</p>
             <img src={hotel.images[0]} alt={hotel.name} />
             <a href={hotel.link} className="button" target="_blank">
               <FaBed stroke="#fff" fill="#fff" size={20} />
@@ -42,11 +44,12 @@ const HotelMap = () => {
         const hotelIcon = L.divIcon({
           className: styles["hotel-icon"],
           html: iconElementString,
-          iconSize: [150, 153],
+          iconSize: [150, 190],
+          iconAnchor: [90, 180],
         });
         return (
           <Marker
-            key={hotel.id}
+            key={`hotelMarker_${hotel.id}`}
             position={hotel.location.coordinates}
             icon={hotelIcon}
           >

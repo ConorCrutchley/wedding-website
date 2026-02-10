@@ -3,6 +3,7 @@ import type { LatLngTuple } from "leaflet";
 export interface Hotel {
   id: string;
   name: string;
+  shortName: string;
   rating: number;
   location: {
     distance: number;

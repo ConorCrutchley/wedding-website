@@ -21,6 +21,7 @@ export const hotels: Hotel[] = [
   {
     id: "hilton",
     name: "Hilton London Croydon",
+    shortName: "Hilton",
     rating: 4,
     location: {
       distance: 0.2,
@@ -37,6 +38,7 @@ export const hotels: Hotel[] = [
   {
     id: "aerodrome",
     name: "London Croydon Aerodrome Hotel, BW Signature Collection",
+    shortName: "Aerodrome",
     rating: 4,
     location: {
       distance: 0.1,
@@ -60,6 +62,7 @@ export const hotels: Hotel[] = [
   {
     id: "premierInn",
     name: "Premier Inn London Croydon - Purley A23",
+    shortName: "Premier Inn",
     rating: 3,
     location: {
       distance: 0.3,

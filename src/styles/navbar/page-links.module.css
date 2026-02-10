@@ -23,7 +23,7 @@
   transform: translateX(-50%);
   transition: width 0.3s;
   border-radius: 0.125rem;
-  background: var(--grey-purple);
+  background: var(--grey-orange);
 }
 .page-links a:hover::before,
 .page-links a.active::before {

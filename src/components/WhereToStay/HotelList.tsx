@@ -6,7 +6,7 @@ const HotelList = () => {
   return (
     <div>
       {hotels.map((hotel, i) => (
-        <React.Fragment key={hotel.id}>
+        <React.Fragment key={`hotelItem_${hotel.id}`}>
           <HotelItem hotel={hotel} />
           {i < hotels.length - 1 && <hr />}
         </React.Fragment>
