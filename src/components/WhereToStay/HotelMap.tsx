@@ -1,7 +1,10 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
+import { FaBed } from "react-icons/fa";
+import L from "leaflet";
 import type { LatLngTuple } from "leaflet";
 import { hotels } from "@/constants/hotels";
+import { renderToStaticMarkup } from "react-dom/server";
 import styles from "@/styles/where-to-stay/hotel-map.module.css";
 
 const HotelMap = () => {
@@ -24,14 +27,33 @@ const HotelMap = () => {
           A pretty CSS3 popup. <br /> Easily customizable.
         </Popup>
       </Marker>
-      {hotels.map((hotel) => (
-        <Marker
-          key={hotel.id}
-          position={hotel.location.coordinates as LatLngTuple}
-        >
-          <Popup>{hotel.name}</Popup>
-        </Marker>
-      ))}
+      {hotels.map((hotel) => {
+        const iconElement = (
+          <>
+            <img src={hotel.images[0]} alt={hotel.name} />
+            <a href={hotel.link} className="button" target="_blank">
+              <FaBed stroke="#fff" fill="#fff" size={20} />
+              &pound;{hotel.discountedPrice}
+            </a>
+          </>
+        );
+        const iconElementString = renderToStaticMarkup(iconElement);
+
+        const hotelIcon = L.divIcon({
+          className: styles["hotel-icon"],
+          html: iconElementString,
+          iconSize: [150, 153],
+        });
+        return (
+          <Marker
+            key={hotel.id}
+            position={hotel.location.coordinates}
+            icon={hotelIcon}
+          >
+            <Popup>{hotel.name}</Popup>
+          </Marker>
+        );
+      })}
     </MapContainer>
   );
 };

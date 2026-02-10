@@ -93,11 +93,21 @@ button,
   font-size: 1rem;
   line-height: 1.2;
   min-width: 3rem;
-  transition: all 0.3s;
   text-decoration: none;
+}
+button,
+.button,
+button svg,
+.button svg {
+  transition: all 0.3s;
 }
 button:hover,
 .button:hover {
   background-color: var(--white);
   color: var(--grey-purple);
+}
+button:hover svg,
+.button:hover svg {
+  fill: var(--grey-purple) !important;
+  stroke: var(--grey-purple) !important;
 }
