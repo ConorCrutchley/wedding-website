@@ -2,6 +2,9 @@
   position: fixed;
   z-index: -2;
 }
+.bg-flower img {
+  animation-composition: add;
+}
 .bg-top-left img,
 .bg-bottom-right img {
   width: 26.6rem;
@@ -18,30 +21,38 @@
 .bg-top-left {
   top: -8.6rem;
   left: -12.45rem;
-  transform: rotate(70deg);
   animation: fade-in 1s ease-in-out 0s 1;
+}
+.bg-top-left img {
+  transform: rotate(70deg);
 }
 .bg-top-right {
   top: -12.95rem;
   right: -19rem;
+  animation: fade-in 2.5s ease-in-out 0s 1;
+}
+.bg-top-right img {
   width: 31.2rem;
   height: 27rem;
-  animation: fade-in 2.5s ease-in-out 0s 1;
 }
 .bg-bottom-left {
   bottom: -20rem;
   left: -14rem;
+  animation: fade-in 3.25s ease-in-out 0s 1;
+}
+.bg-bottom-left img {
   width: 31.45rem;
   height: 32.5rem;
   transform: rotate(-16deg);
-  animation: fade-in 3.25s ease-in-out 0s 1;
 }
 .bg-bottom-right {
   bottom: 1.35rem;
   right: -25.55rem;
-  transform: rotate(-70deg);
   animation: fade-in 1.75s ease-in-out 0s 1;
+}
+.bg-bottom-right img {
   transform-origin: center bottom;
+  transform: rotate(-70deg);
 }
 @media screen and (min-width: 48em) {
   .bg-top-left img,
