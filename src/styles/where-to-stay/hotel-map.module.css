@@ -7,8 +7,7 @@
 .hotel-map img {
   border-radius: 0;
 }
-.hotel-icon {
-  background-color: var(--opaque-white);
+.marker-icon {
   padding: 0.75rem;
   border-radius: 0.5rem;
   display: flex;
@@ -17,10 +16,16 @@
   text-align: center;
   border: 2px solid var(--grey-orange);
 }
-.hotel-icon:hover {
+.marker-icon:hover {
   z-index: 999 !important;
 }
-.hotel-icon::after {
+.hotel-icon {
+  background-color: var(--opaque-white);
+}
+.venue-icon {
+  background-color: var(--grey-purple);
+}
+.marker-icon::after {
   content: "";
   display: block;
   position: absolute;
@@ -29,15 +34,23 @@
   transform: translateX(-50%) rotate(45deg);
   width: 1rem;
   height: 1rem;
+  border-radius: 0.2rem;
   border-right: 2px solid var(--grey-orange);
   border-bottom: 2px solid var(--grey-orange);
-  background-color: var(--white);
-  border-radius: 0.2rem;
 }
-.hotel-icon p {
+.hotel-icon::after {
+  background-color: var(--white);
+}
+.venue-icon::after {
+  background-color: var(--grey-purple);
+}
+.marker-icon p {
   margin: 0.25rem auto;
   font-size: 0.85rem;
   position: relative;
+}
+.venue-icon p {
+  color: var(--white);
 }
 .hotel-icon p::after {
   content: "";
@@ -50,7 +63,7 @@
   height: 2px;
   background-color: var(--grey-orange);
 }
-.hotel-icon img {
+.marker-icon img {
   width: 100% !important;
   border-radius: 0.25rem;
 }

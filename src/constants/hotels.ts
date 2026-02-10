@@ -56,7 +56,7 @@ export const hotels: Hotel[] = [
       aerodrome6,
     ],
     description:
-      "The Aerodrome Hotel is the closest hotel to the Grand Saphire, and one of the most affordable. This 4 star hotel with a 7.7 rating on booking.com makes this hotel the best value for money nearby.",
+      "The Aerodrome Hotel is the closest hotel to the Grand Sapphire, and one of the most affordable. This 4 star hotel with a 7.7 rating on booking.com makes this hotel the best value for money nearby.",
     link: "https://withjoy.com/stays/f19b8bef-d609-42bf-bba1-2c71e94da625?eventId=97da6535-0010-5af8-a8dc-da0be79f291c&provider=zh&currency=GBP&utm_medium=web&utm_source=website_accommodations_page&utm_campaign=accommodations_tile",
   },
   {
@@ -73,7 +73,7 @@ export const hotels: Hotel[] = [
     discountedPrice: 72,
     images: [premierInn1, premierInn2, premierInn3, premierInn4],
     description:
-      "For those who are driving, the Premier Inn offers free parking for guests, all just a short walk away from the Grand Saphire. This hotel is a great choice for those looking for a budget friendly option. Plus, with modern amenities like free Wi-Fi and on-site dining, you'll have everything you'll need for a comfortable stay.",
+      "For those who are driving, the Premier Inn offers free parking for guests, all just a short walk away from the Grand Sapphire. This hotel is a great choice for those looking for a budget friendly option. Plus, with modern amenities like free Wi-Fi and on-site dining, you'll have everything you'll need for a comfortable stay.",
     link: "https://withjoy.com/stays/d1f18727-cec8-4e99-bf84-11045ff9eaf9?eventId=97da6535-0010-5af8-a8dc-da0be79f291c&provider=zh&currency=GBP&utm_medium=web&utm_source=website_accommodations_page&utm_campaign=accommodations_tile",
   },
 ];
