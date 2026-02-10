@@ -18,10 +18,10 @@ const HotelItem = ({ hotel }: { hotel: Hotel }) => {
             <IoStar key={`hotelItem_${hotel.id}_${index}`} />
           ))}
         </span>
-        <span>{hotel.distance} Miles</span>
+        <span>{hotel.location.distance} Miles</span>
         <span>
           <FaWalking />
-          {hotel.walkTime} Min
+          {hotel.location.walkTime} Min
         </span>
       </div>
       <p>{hotel.description}</p>

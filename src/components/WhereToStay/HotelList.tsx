@@ -1,14 +1,15 @@
 import { HotelItem } from "@/components/WhereToStay";
+import React from "react";
 import { hotels } from "@/constants/hotels";
 
 const HotelList = () => {
   return (
     <div>
       {hotels.map((hotel, i) => (
-        <>
-          <HotelItem key={hotel.id} hotel={hotel} />
+        <React.Fragment key={hotel.id}>
+          <HotelItem hotel={hotel} />
           {i < hotels.length - 1 && <hr />}
-        </>
+        </React.Fragment>
       ))}
     </div>
   );
