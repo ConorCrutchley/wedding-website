@@ -53,7 +53,7 @@
 .hamburger.open button span::after {
   transform: translateY(0rem) rotate(90deg);
 }
-@media (min-width: 900px) {
+@media (min-width: 64rem) {
   .hamburger {
     display: none;
   }

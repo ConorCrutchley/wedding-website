@@ -14,7 +14,7 @@
   margin: 0 auto;
   display: block;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64rem) {
   .what-to-expect-item {
     justify-content: space-between;
     gap: 2rem;

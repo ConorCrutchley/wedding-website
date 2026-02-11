@@ -54,7 +54,7 @@
   transform-origin: center bottom;
   transform: rotate(-70deg);
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64rem) {
   .bg-top-left img,
   .bg-bottom-right img {
     width: 29.6rem;

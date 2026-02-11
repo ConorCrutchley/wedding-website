@@ -7,7 +7,7 @@ import styles from "@/styles/where-to-stay/hotel-item.module.css";
 const HotelItem = ({ hotel }: { hotel: Hotel }) => {
   return (
     <div className={styles["hotel-item"]}>
-      <div>
+      <div className={styles["hotel-image"]}>
         <img src={hotel.images[0]} alt={hotel.name} />
       </div>
       <h4 className="h4">{hotel.name}</h4>

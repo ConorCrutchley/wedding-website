@@ -79,9 +79,6 @@ h4,
   margin-inline-end: 0px;
   unicode-bidi: isolate;
 }
-#root {
-  overflow-x: hidden;
-}
 button,
 .button {
   cursor: pointer;

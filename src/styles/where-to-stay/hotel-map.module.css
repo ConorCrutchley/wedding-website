@@ -3,6 +3,7 @@
   height: 40rem;
   position: relative;
   z-index: 0;
+  align-self: flex-start;
 }
 .hotel-map img {
   border-radius: 0;
@@ -79,4 +80,11 @@
   padding: 0.5rem 1rem;
   position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 64rem) {
+  .hotel-map {
+    position: sticky;
+    top: 8rem;
+    height: calc(100vh - 10rem);
+  }
 }

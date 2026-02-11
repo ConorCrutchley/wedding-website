@@ -3,6 +3,9 @@
   flex-direction: column;
   gap: 1rem;
 }
+.hotel-image img {
+  border-radius: 0.5rem;
+}
 .hotel-stats,
 .hotel-stats span {
   display: flex;
@@ -50,4 +53,9 @@
   width: 100%;
   display: block;
   text-align: center;
+}
+@media screen and (min-width: 64rem) {
+  .hotel-item {
+    max-width: 30rem;
+  }
 }

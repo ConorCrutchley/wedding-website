@@ -1,0 +1,10 @@
+.where-to-stay {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (min-width: 64rem) {
+  .where-to-stay {
+    flex-direction: row;
+  }
+}

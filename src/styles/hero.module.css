@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
 }
 .hero-section img {
   position: absolute;
@@ -35,7 +37,7 @@ img.hero-hexagons {
   line-height: 0.89;
   animation: fade-in 5.5s ease-in-out 0s 1;
 }
-@media (min-width: 48em) {
+@media (min-width: 48rem) {
   .hero-section h1 {
     max-width: 185px;
     font-size: 5rem;
