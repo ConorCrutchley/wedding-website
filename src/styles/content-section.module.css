@@ -19,6 +19,22 @@
 }
 .content-section h2 {
   text-align: center;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+.content-section h2::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 2rem);
+  height: 0.125rem;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.125rem;
+  background: var(--grey-orange);
 }
 .content-section hr {
   border-top: 1px solid var(--grey-orange);

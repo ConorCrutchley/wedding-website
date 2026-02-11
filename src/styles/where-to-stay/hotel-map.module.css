@@ -37,6 +37,7 @@
   border-radius: 0.2rem;
   border-right: 2px solid var(--grey-orange);
   border-bottom: 2px solid var(--grey-orange);
+  border-radius: 0.125rem;
 }
 .hotel-icon::after {
   background-color: var(--white);
