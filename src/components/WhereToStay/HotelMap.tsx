@@ -11,7 +11,7 @@ import styles from "@/styles/where-to-stay/hotel-map.module.css";
 
 const HotelMap = () => {
   const markerParams: L.DivIconOptions = {
-    iconSize: [150, 190],
+    iconSize: [120, 163],
     iconAnchor: [90, 180],
     popupAnchor: [-15, -180],
   };
@@ -41,7 +41,7 @@ const HotelMap = () => {
       id="map"
       className={styles["hotel-map"]}
       center={centerCoord}
-      zoom={17}
+      zoom={16}
       scrollWheelZoom={false}
     >
       <TileLayer
@@ -67,7 +67,7 @@ const HotelMap = () => {
             <p>{hotel.shortName}</p>
             <img src={hotel.images[0]} alt={hotel.name} />
             <a href={hotel.link} className="button" target="_blank">
-              <FaBed stroke="#fff" fill="#fff" size={20} />
+              <FaBed stroke="#fff" fill="#fff" size={18} />
               &pound;{hotel.discountedPrice}
             </a>
           </>
