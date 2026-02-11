@@ -1,7 +1,7 @@
 .content-section {
   margin: 0 auto;
   background: var(--opaque-white);
-  padding: 2rem;
+  padding: 2rem 1rem;
   width: calc(100% - 3rem);
   max-width: 1024px;
 }
