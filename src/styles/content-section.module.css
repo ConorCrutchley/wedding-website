@@ -10,6 +10,7 @@
 }
 .content-section.round-bottom-borders {
   border-radius: 0 0 1rem 1rem;
+  margin-bottom: 2rem;
 }
 .content-section-flower {
   width: 42rem;
