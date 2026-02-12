@@ -45,6 +45,9 @@
   max-width: 100%;
   border-radius: 1rem;
 }
+.content-section li {
+  margin: 0.5rem 0;
+}
 @media screen and (min-width: 64rem) {
   .content-section {
     padding: 2rem 6rem;
