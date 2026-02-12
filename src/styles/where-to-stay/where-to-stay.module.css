@@ -3,7 +3,22 @@
   flex-direction: column;
   gap: 2rem;
 }
+.explore-hotels-prompt,
+.explore-hotels-button {
+  display: block;
+  text-align: center;
+}
+.explore-hotels-prompt {
+  margin: 0 0 3rem;
+}
 @media screen and (min-width: 64rem) {
+  .explore-hotels-prompt {
+    margin: 3rem 0;
+  }
+  .explore-hotels-button {
+    margin: 0 auto;
+    width: fit-content;
+  }
   .where-to-stay {
     flex-direction: row;
   }

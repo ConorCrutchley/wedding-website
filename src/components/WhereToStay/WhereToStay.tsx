@@ -16,6 +16,18 @@ const WhereToStay = () => {
         <HotelMap />
         <HotelList />
       </div>
+      <p className={styles["explore-hotels-prompt"]}>
+        If none of these hotels take your fancy, there are still a number of
+        hotels nearby to choose from. You can browse more with our special rates
+        here:
+      </p>
+      <a
+        href="https://withjoy.com/tobi-and-conor/hotel/search?layout=compact&source=guest_map&utm_campaign=guest_map&utm_medium=web&utm_source=website_accommodations_page"
+        target="_blank"
+        className={`button ${styles["explore-hotels-button"]}`}
+      >
+        Explore More Hotels
+      </a>
     </ContentSection>
   );
 };
