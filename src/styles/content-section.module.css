@@ -48,6 +48,15 @@
 .content-section li {
   margin: 0.5rem 0;
 }
+.content-section details {
+  margin: 1rem 0;
+}
+.content-section details summary {
+  cursor: pointer;
+}
+.content-section details p {
+  margin-left: 1rem;
+}
 @media screen and (min-width: 64rem) {
   .content-section {
     padding: 2rem 6rem;
