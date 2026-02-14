@@ -3,11 +3,11 @@ import sections from "@/constants/sections.json";
 
 const Schedule = () => {
   return (
-    <ContentSection id={sections["schedule"]}>
-      <h2>Schedule</h2>
+    <ContentSection id={sections["programme"]}>
+      <h2>Programme</h2>
       <p>
-        The wedding should start around 4pm. There are no specific timings for
-        the ceremony, but the ceremony is expected to run as follows:
+        The wedding should start around 3pm. The ceremony is expected to run as
+        follows:
       </p>
       <ol>
         <li>Entrance of the Bride's Family</li>

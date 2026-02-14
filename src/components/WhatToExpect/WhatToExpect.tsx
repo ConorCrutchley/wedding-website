@@ -18,17 +18,17 @@ const WhatToExpect = () => {
       <h2>What to Expect</h2>
       <p>
         For many guests, and even the groom, this will be their first
-        traditional Nigerian (Yoruba) wedding. These guests may be wondering
-        what will happen on the day?
+        traditional Nigerian wedding. These guests may be wondering what will
+        happen on the day?
       </p>
       <p>
-        The ceremony is vibrant, symbolic, and full of music, prayer, and
-        celebration. Here&lsquo;s a simple guide to what will happen on the day.
+        The ceremony is vibrant, symbolic, and full of prayer, music, and
+        celebration. Here's a simple guide to what will happen on the day.
       </p>
       <WhatToExpectItem
         image={{
           src: familyEntrace,
-          alt: "family in blue and silver asoebi entering a wedding",
+          alt: "family in blue and silver aso ebi entering a wedding",
         }}
       >
         <h3>Family Entrances</h3>
@@ -47,10 +47,9 @@ const WhatToExpect = () => {
       >
         <h3>Proposal Letter</h3>
         <p>
-          A ceremonial letter is read on behalf of the groom&lsquo;s family,
-          usually by the family head or appointed representative. The letter
-          formally expresses the family&lsquo;s intention for their son to marry
-          the bride.
+          A ceremonial letter is read on behalf of the groom's family, usually
+          by the family head or appointed representative. The letter formally
+          expresses the family's intention for their son to marry the bride.
         </p>
       </WhatToExpectItem>
       <WhatToExpectItem
@@ -61,23 +60,22 @@ const WhatToExpect = () => {
       >
         <h3>Response (Kíkà Letter)</h3>
         <p>
-          A member of the bride&lsquo;s family responds by reading an acceptance
-          letter, acknowledging the proposal and welcoming the groom&lsquo;s
-          family.
+          A member of the bride's family responds by reading an acceptance
+          letter, acknowledging the proposal and welcoming the groom's family.
         </p>
       </WhatToExpectItem>
       <WhatToExpectItem
         image={{
           src: groomsEntrance,
-          alt: "groom in green agbada surrounded by his groomsmen in blue asoebi",
+          alt: "groom in green agbada surrounded by his groomsmen in blue aso ebi",
           position: "left",
         }}
       >
         <h3>Groom's Entrance</h3>
         <p>
           The groom enters with his groomsmen, dancing joyfully. As a sign of
-          respect to the bride&lsquo;s family and elders, they remove their
-          filas (traditional hats).
+          respect to the bride's family and elders, they remove their filas
+          (hats).
         </p>
       </WhatToExpectItem>
       <WhatToExpectItem
@@ -89,9 +87,8 @@ const WhatToExpect = () => {
         <h3>Ìdobálè (Prostration)</h3>
         <p>
           The groom, supported by his groomsmen, prostrates fully on the floor
-          before the bride&lsquo;s family. This act symbolises humility, respect
-          for elders, and a formal request for the bride&lsquo;s hand in
-          marriage.
+          before the bride's family. This act symbolises humility, respect for
+          elders, and a formal request for the bride's hand in marriage.
         </p>
       </WhatToExpectItem>
       <WhatToExpectItem
@@ -101,7 +98,7 @@ const WhatToExpect = () => {
           position: "left",
         }}
       >
-        <h3>Bride&lsquo;s Entrance</h3>
+        <h3>Bride's Entrance</h3>
         <p>
           The bride enters with her bridesmaids and friends, accompanied by
           singing, dancing, and enthusiastic cheering.
@@ -118,7 +115,7 @@ const WhatToExpect = () => {
           The bride appears fully veiled, symbolising modesty and honour. Once
           she reaches her family, she stands with her mother under the veil
           while prayers and blessings are offered before she is guided to her
-          in-laws
+          in-laws.
         </p>
       </WhatToExpectItem>
       <WhatToExpectItem
@@ -128,12 +125,12 @@ const WhatToExpect = () => {
           position: "left",
         }}
       >
-        <h3>Èrù Ìyàwó (Bride&lsquo;s Gifts)</h3>
+        <h3>Èrù Ìyàwó (Bride's Gifts)</h3>
         <p>
-          The groom&lsquo;s family presents gifts to the bride&lsquo;s family as
-          a token of appreciation for raising her well. In Yoruba culture, a
-          child is raised by the whole community, so these gifts honour the
-          wider family and elders.
+          The groom's family presents gifts to the bride's family as a token of
+          appreciation for raising her well. In Nigerian culture, a child is
+          raised by the whole community, so these gifts honour the wider family
+          and elders.
         </p>
       </WhatToExpectItem>
       <WhatToExpectItem
@@ -144,7 +141,7 @@ const WhatToExpect = () => {
       >
         <h3>Prayers & Joining the Couple</h3>
         <p>
-          Elders from both families offer prayers for fertility, prosperity,
+          Both families pray over the couple for fertility, prosperity,
           longevity, and peace. The bride is then formally joined with the
           groom, followed by celebration and applause.
         </p>
@@ -163,12 +160,13 @@ const WhatToExpect = () => {
           dollars) on the couple or dancers as a sign of joy and appreciation.
         </p>
       </WhatToExpectItem>
-      <h3>Not sure what&lsquo;s happening? That&lsquo;s okay!</h3>
+      <h3>Not sure what's happening? That's okay!</h3>
       <p>
         Many guests will be experiencing a traditional Nigerian wedding for the
-        first time. There&lsquo;s no pressure to get anything “right”. Just
-        watch, listen, dance if you feel like it, and enjoy the celebration. If
-        in doubt, someone will happily point you in the right direction.
+        first time. There's no pressure to get anything “right”. Just watch,
+        listen, dance if you feel like it, and enjoy the celebration. If in
+        doubt, someone will happily provide guidance and information where
+        needed.
       </p>
     </ContentSection>
   );

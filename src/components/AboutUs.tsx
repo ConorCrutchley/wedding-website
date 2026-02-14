@@ -22,9 +22,9 @@ const AboutUs = () => {
         haven't stopped talking since.
       </p>
       <p>
-        For those interested, Tobi celebrates her birthday on both the 28th of
-        February and the 1st of March, and on all three days when it's a leap
-        year!
+        For those interested, when it's not a leap year, Tobi celebrates her
+        birthday on both the 28th of February and the 1st of March to make up
+        for no 29th of February in those years.
       </p>
       <hr />
       <h3>Who made the first move? How?</h3>
@@ -38,9 +38,9 @@ const AboutUs = () => {
       <h3>What was your most memorable date?</h3>
       <p>
         There's so many to choose from, we love to going out and doing new
-        things. We always talk about our first date though. We went to Zizi's in
-        the mailbox and got chatting over some great food. We were both nervous,
-        Tobi was even doing a nervous dance in between each bite.
+        things. We always talk about our first date though. We went to Zizzi's
+        in the mailbox and got chatting over some great food. We were both
+        nervous, Tobi was even doing a nervous dance in between each bite.
       </p>
       <p>
         We soon warmed to each other though, and things got competitive when we
@@ -50,9 +50,10 @@ const AboutUs = () => {
       </p>
       <p>
         After some drinks and some games at the arcade, I walked Tobi home. It
-        being January, it was really cold, and I mentioned that Tobi's gloves
-        looked warm. I asked if I could feel her gloves, she said yes, and then
-        I held her hand all the way back before kissing her goodnight.
+        being January, it was really cold, and I asked if Tobi's gloves were
+        warm. She held up her hands and I took the opportunity to hold her hand
+        from there. I held her hand all the way back before kissing her
+        goodnight.
       </p>
       <p>
         I must have done something right on that first date as she agreed so a
