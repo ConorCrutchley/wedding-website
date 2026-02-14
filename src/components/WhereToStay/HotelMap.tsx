@@ -9,10 +9,9 @@ import grandSapphire from "@/assets/hotels/grand-sapphire-entrance.webp";
 import { hotels } from "@/constants/hotels";
 import { renderToStaticMarkup } from "react-dom/server";
 import styles from "@/styles/where-to-stay/hotel-map.module.css";
+import { venue } from "@/constants/venue";
 
 const HotelMap = () => {
-  const venueCoord: LatLngTuple = [51.35617754848806, -0.11968815767081438];
-
   const [mapParamsLoaded, setMapParamsLoaded] = useState(false);
   const [markerParams, setMarkerParams] = useState<L.DivIconOptions>({
     iconSize: [110, 143],
@@ -74,17 +73,17 @@ const HotelMap = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={venueCoord} icon={venueIcon}>
+          <Marker position={venue.coordinates} icon={venueIcon}>
             <Popup>
-              Grand Sapphire Banqueting &amp; Hotel,
+              {venue.venueName},
               <br />
-              45 Imperial Way,
+              {venue.property},
               <br />
-              Croydon,
+              {venue.city},
               <br />
-              CR0 4RR,
+              {venue.postcode},
               <br />
-              UK
+              {venue.country}
             </Popup>
           </Marker>
           {hotels.map((hotel) => {
