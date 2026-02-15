@@ -6,7 +6,7 @@
  */
 export const getNavbarHeight = () => {
   const windowWidth = window.innerWidth;
-  const navbarHeight = windowWidth < 900 ? 120 : 150;
+  const navbarHeight = windowWidth < 900 ? 96 : 116;
   return navbarHeight;
 };
 
@@ -28,6 +28,6 @@ export const scrollToSection = (section: string) => {
   // Scroll to the calculated position
   window.scrollTo({
     top: scrollTo,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 };
