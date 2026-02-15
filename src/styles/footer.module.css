@@ -1,0 +1,13 @@
+.footer {
+  background-color: var(--opaque-white);
+  text-align: center;
+  padding: 1rem;
+  color: var(--grey-purple);
+  border-radius: 1rem 1rem 0 0;
+  width: calc(100% - 3rem);
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.footer a {
+  color: var(--grey-purple);
+}

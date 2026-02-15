@@ -1,6 +1,7 @@
 import AboutUs from "@/components/AboutUs";
 import Background from "@/components/Background";
 import FAQs from "@/components/FAQs";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import RSVP from "@/components/RSVP";
@@ -24,6 +25,7 @@ function App() {
       <Schedule />
       <FAQs />
       <WeddingParty />
+      <Footer />
     </>
   );
 }
