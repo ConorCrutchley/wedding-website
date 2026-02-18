@@ -34,6 +34,7 @@ const FAQs = () => {
           wear any formal outfit.
         </p>
       </details>
+      <hr />
 
       {/* Participation */}
       <h3>Participation & Traditions</h3>
@@ -67,6 +68,7 @@ const FAQs = () => {
         <summary>Will there be a lot of dancing?</summary>
         <p>Yes! Come prepared to dance, or at least cheer others on.</p>
       </details>
+      <hr />
 
       {/* Food */}
       <h3>Food & Drink</h3>
@@ -91,6 +93,7 @@ const FAQs = () => {
           available.
         </p>
       </details>
+      <hr />
 
       {/* Gifts */}
       <h3>Gifts</h3>
@@ -109,6 +112,7 @@ const FAQs = () => {
           your contribution goes towards.
         </p>
       </details>
+      <hr />
 
       {/* Logistics */}
       <h3>Timing & Logistics</h3>
