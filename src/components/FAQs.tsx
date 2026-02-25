@@ -12,10 +12,10 @@ const FAQs = () => {
         <p>
           Traditional Nigerian weddings are colourful and celebratory. Guests
           are encouraged to wear bright, elegant attire. Nigerian guests
-          typically wear aso ebi (coordinated outfits worn by family members,
-          friends, and specific groups for an occasion), while non-Nigerian
-          guests are welcome to wear any wedding attire including aso ebi if
-          they wish.
+          typically wear aso ebi <strong>(</strong>coordinated outfits worn by
+          family members, friends, and specific groups for an occasion
+          <strong>)</strong>, while non-Nigerian guests are welcome to wear any
+          wedding attire including aso ebi if they wish.
         </p>
       </details>
       <details open>

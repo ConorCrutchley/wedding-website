@@ -19,10 +19,16 @@ const Schedule = () => {
           Our Mission - <em>Alaga Iduro</em>
         </li>
         <li>
-          Marriage Proposal Letter <em>(from the Groom's family)</em>
+          Marriage Proposal Letter{" "}
+          <em>
+            <strong>(</strong>from the Groom's family<strong>)</strong>
+          </em>
         </li>
         <li>
-          Marriage Acceptance Letter <em>(from the Bride's family)</em>
+          Marriage Acceptance Letter{" "}
+          <em>
+            <strong>(</strong>from the Bride's family<strong>)</strong>
+          </em>
         </li>
         <li>Welcome the Groom</li>
         <li>Here Comes the Bride</li>

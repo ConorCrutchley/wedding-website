@@ -58,7 +58,9 @@ const WhatToExpect = () => {
           alt: "hand holding a wooden tablet with a golden letter",
         }}
       >
-        <h3>Response (Kíkà Letter)</h3>
+        <h3>
+          Response <strong>(</strong>Kíkà Letter<strong>)</strong>
+        </h3>
         <p>
           A member of the bride's family responds by reading an acceptance
           letter, acknowledging the proposal and welcoming the groom's family.
@@ -74,8 +76,8 @@ const WhatToExpect = () => {
         <h3>Groom's Entrance</h3>
         <p>
           The groom enters with his groomsmen, dancing joyfully. As a sign of
-          respect to the bride's family and elders, they remove their filas
-          (hats).
+          respect to the bride's family and elders, they remove their filas{" "}
+          <strong>(</strong>hats<strong>)</strong>.
         </p>
       </WhatToExpectItem>
       <WhatToExpectItem
@@ -84,7 +86,9 @@ const WhatToExpect = () => {
           alt: "groom and groomsmen lying on the floor at the feet of the brides family",
         }}
       >
-        <h3>Ìdobálè (Prostration)</h3>
+        <h3>
+          Ìdobálè <strong>(</strong>Prostration<strong>)</strong>
+        </h3>
         <p>
           The groom, supported by his groomsmen, prostrates fully on the floor
           before the bride's family. This act symbolises humility, respect for
@@ -125,7 +129,9 @@ const WhatToExpect = () => {
           position: "left",
         }}
       >
-        <h3>Èrù Ìyàwó (Bride's Gifts)</h3>
+        <h3>
+          Èrù Ìyàwó <strong>(</strong>Bride's Gifts<strong>)</strong>
+        </h3>
         <p>
           The groom's family presents gifts to the bride's family as a token of
           appreciation for raising her well. In Nigerian culture, a child is
@@ -156,8 +162,9 @@ const WhatToExpect = () => {
         <h3>Live Band & Celebration</h3>
         <p>
           A live band provides music throughout the ceremony, praising the
-          couple and guests. Guests often “spray” money (traditionally U.S.
-          dollars) on the couple or dancers as a sign of joy and appreciation.
+          couple and guests. Guests often “spray” money <strong>(</strong>
+          traditionally U.S. dollars<strong>)</strong> on the couple or dancers
+          as a sign of joy and appreciation.
         </p>
       </WhatToExpectItem>
       <h3>Not sure what's happening? That's okay!</h3>

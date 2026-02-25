@@ -53,6 +53,21 @@ const Travel = () => {
         </a>{" "}
         section.
       </p>
+      <p>
+        It should be noted that the venue is in London's Ultra Low Emission Zone{" "}
+        <strong>(</strong>ULEZ<strong>)</strong>. Certain cars may need to pay
+        £12.50 per day to drive in the zone. You can find out more about
+        London's ULEZ and whether your car will be subject to charges by going
+        to the{" "}
+        <a
+          href="https://tfl.gov.uk/modes/driving/ultra-low-emission-zone/ulez-where-and-when"
+          target="_blank"
+          rel="noreferrer"
+        >
+          TFL website
+        </a>
+        .
+      </p>
       <hr />
       <h3>By Train</h3>
       <p>
@@ -63,9 +78,15 @@ const Travel = () => {
       </p>
       <ul>
         <li>To take the Victoria line to Brixton from Euston Station.</li>
-        <li>Get off at Victoria station (this will be 4 stops).</li>
+        <li>
+          Get off at Victoria station <strong>(</strong>this will be 4 stops
+          <strong>)</strong>.
+        </li>
         <li>Take the Southern line to Epsom Downs.</li>
-        <li>Get off at Waddon station (this will be 10 stops).</li>
+        <li>
+          Get off at Waddon station <strong>(</strong>this will be 10 stops
+          <strong>)</strong>.
+        </li>
         <li>Walk for 20 minutes to get to the venue.</li>
       </ul>
       <p>
@@ -75,10 +96,19 @@ const Travel = () => {
         <li>
           Taking the Northern line to Morden via Bank from Euston Station.
         </li>
-        <li>Get off at London Bridge station (this will be 6 stops).</li>
+        <li>
+          Get off at London Bridge station <strong>(</strong>this will be 6
+          stops<strong>)</strong>.
+        </li>
         <li>Take the ThamesLink line to Brighton.</li>
-        <li>Get off at East Croydon station (this will be non-stop).</li>
-        <li>Take the 119 bus to Imperial Way (this will be 12 stops).</li>
+        <li>
+          Get off at East Croydon station <strong>(</strong>this will be
+          non-stop<strong>)</strong>.
+        </li>
+        <li>
+          Take the 119 bus to Imperial Way <strong>(</strong>this will be 12
+          stops<strong>)</strong>.
+        </li>
         <li>Walk for 6 minutes to get to the venue.</li>
       </ul>
       <hr />
