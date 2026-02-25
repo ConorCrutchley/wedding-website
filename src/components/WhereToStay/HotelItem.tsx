@@ -57,6 +57,7 @@ const HotelItem = ({ hotel }: { hotel: Hotel }) => {
         href={hotel.link}
         className={`button ${styles["book-now"]}`}
         target="_blank"
+        rel="noreferrer"
       >
         Book Now
       </a>

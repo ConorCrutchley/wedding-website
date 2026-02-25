@@ -24,6 +24,7 @@ const WhereToStay = () => {
       <a
         href="https://withjoy.com/tobi-and-conor/hotel/search?layout=compact&source=guest_map&utm_campaign=guest_map&utm_medium=web&utm_source=website_accommodations_page"
         target="_blank"
+        rel="noreferrer"
         className={`button ${styles["explore-hotels-button"]}`}
       >
         Explore More Hotels

@@ -91,7 +91,12 @@ const HotelMap = () => {
               <>
                 <p>{hotel.shortName}</p>
                 <img src={hotel.images[0]} alt={hotel.name} />
-                <a href={hotel.link} className="button" target="_blank">
+                <a
+                  href={hotel.link}
+                  className="button"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaBed stroke="#fff" fill="#fff" size={svgSize} />
                   &pound;{hotel.discountedPrice}
                 </a>

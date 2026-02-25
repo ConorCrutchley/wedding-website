@@ -26,7 +26,14 @@ const RSVP = () => {
           <p className="h3">{venue.postcode},</p>
           <p className="h3">{venue.country}</p>
         </address>
-        <button>RSVP</button>
+        <a
+          className="button"
+          href="https://withjoy.com/tobi-and-conor/rsvp"
+          target="_blank"
+          rel="noreferrer"
+        >
+          RSVP
+        </a>
         <p>We can't wait to share our special day with you!</p>
       </div>
     </section>
