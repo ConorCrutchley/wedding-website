@@ -1,4 +1,5 @@
 import ContentSection from "@/components/ContentSection";
+import { scrollToSection } from "@/utils/scrollToSection";
 import sections from "@/constants/sections.json";
 
 const FAQs = () => {
@@ -101,15 +102,27 @@ const FAQs = () => {
         <summary>Is spraying money the same as giving a wedding gift?</summary>
         <p>
           No, spraying is part of the celebration. If you'd like to give a gift,
-          we would appreciate any donations.
+          we would appreciate any contributions.
         </p>
       </details>
       <details open>
         <summary>Is there a gift registry?</summary>
         <p>
-          No, we won't have a gift registry. If you'd like to give a gift, we
-          would appreciate any donations. We'll make sure to let you know what
-          your contribution goes towards.
+          Yes, we have a gift registry where you can make contributions towards
+          our honeymoon and our adventures we will have or you can contribute to
+          our first home. More details can be found in the{" "}
+          <a
+            href={`#${sections["registry"]}`}
+            onClick={(e) => {
+              // Prevent the default behavior of the link
+              // and scroll to the section
+              e.preventDefault();
+              scrollToSection(sections["registry"]);
+            }}
+          >
+            Registry
+          </a>{" "}
+          section.
         </p>
       </details>
       <hr />

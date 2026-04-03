@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import RSVP from "@/components/RSVP";
+import Registry from "@/components/Registry";
 import Schedule from "@/components/Programme";
 import Travel from "@/components/Travel";
 import WeddingParty from "@/components/WeddingParty";
@@ -23,8 +24,9 @@ function App() {
       <Travel />
       <WhereToStay />
       <Schedule />
-      <FAQs />
+      <Registry />
       <WeddingParty />
+      <FAQs />
       <Footer />
     </>
   );

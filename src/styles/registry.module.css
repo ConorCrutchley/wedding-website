@@ -1,0 +1,10 @@
+.registry-button {
+  display: block;
+  text-align: center;
+  margin: 2rem auto 0;
+}
+@media screen and (min-width: 64rem) {
+  .registry-button {
+    width: fit-content;
+  }
+}
