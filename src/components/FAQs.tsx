@@ -4,7 +4,7 @@ import sections from "@/constants/sections.json";
 
 const FAQs = () => {
   return (
-    <ContentSection id={sections["faqs"]}>
+    <ContentSection id={sections["faqs"]} roundBottomBorders>
       <h2>Frequently Asked Questions</h2>
       {/* Attire */}
       <h3>Attire & Dress Code</h3>
@@ -102,7 +102,20 @@ const FAQs = () => {
         <summary>Is spraying money the same as giving a wedding gift?</summary>
         <p>
           No, spraying is part of the celebration. If you'd like to give a gift,
-          we would appreciate any contributions.
+          we would appreciate any contributions towards our honeymoon / first
+          home. More details can be found in the{" "}
+          <a
+            href={`#${sections["registry"]}`}
+            onClick={(e) => {
+              // Prevent the default behavior of the link
+              // and scroll to the section
+              e.preventDefault();
+              scrollToSection(sections["registry"]);
+            }}
+          >
+            Registry
+          </a>{" "}
+          section.
         </p>
       </details>
       <details open>

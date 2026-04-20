@@ -80,6 +80,9 @@ h4,
   margin-inline-end: 0px;
   unicode-bidi: isolate;
 }
+summary {
+  font-weight: 700;
+}
 button,
 .button {
   cursor: pointer;
