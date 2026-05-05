@@ -13,7 +13,6 @@ const WeddingParty = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ align: "start" });
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
-  console.log(scrollSnaps);
   const {
     prevBtnDisabled,
     nextBtnDisabled,
@@ -27,17 +26,35 @@ const WeddingParty = () => {
       <div className={styles["embla"]}>
         <div className={styles["embla__viewport"]} ref={emblaRef}>
           <div className={styles["embla__container"]}>
-            {weddingParty.map((member) => (
-              <div className={styles["embla__slide"]} key={member.name}>
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className={styles["member-image"]}
-                />
-                <p className={styles["member-name"]}>{member.name}</p>
-                <p className={styles["member-role"]}>{member.role}</p>
-              </div>
-            ))}
+            {weddingParty.map((member) => {
+              const weddingPartyMembers = weddingParty.filter(
+                (m) => m.team === member.team,
+              );
+
+              const index = weddingPartyMembers.findIndex(
+                (m) => m.name === member.name,
+              );
+
+              const isEven = index % 2 === 0;
+              const isBride = member.team === "bride";
+              const isGroom = member.team === "groom";
+
+              return (
+                <div className={styles["embla__slide"]} key={member.name}>
+                  <div
+                    className={`${styles["member-image-container"]} ${styles[`member-image-container-${member.team}`]} ${isBride && isEven ? styles["member-image-container-bride-even"] : ""} ${isGroom && isEven ? styles["member-image-container-groom-even"] : ""}`}
+                  >
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className={styles["member-image"]}
+                    />
+                  </div>
+                  <p className={styles["member-name"]}>{member.name}</p>
+                  <p className={styles["member-role"]}>{member.role}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
 

@@ -1,6 +1,48 @@
 .member-image {
   border: 2px solid var(--grey-orange);
 }
+.member-image-container {
+  position: relative;
+  padding: 2em;
+}
+.member-image-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: contain;
+}
+.member-image-container-bride:not(.member-image-container-bride-even)::before {
+  background-image: url(/images/faded-blue-flowers-facing-up.webp);
+  bottom: 10px;
+  right: 10px;
+  aspect-ratio: 1089/971;
+  width: 50%;
+  transform: translate(20%, 20%);
+}
+.member-image-container-groom:not(.member-image-container-groom-even)::before {
+  top: 10px;
+  right: 10px;
+  background-image: url(/images/dark-purple-flowers-sprouting-up-left.webp);
+  aspect-ratio: 346/655;
+  height: 50%;
+  transform: translate(0%, -12%) rotate(-20deg);
+}
+.member-image-container-bride-even::before {
+  background-image: url(/images/vibrant-blue-flowers-facing-down.webp);
+  aspect-ratio: 1089/971;
+  top: 10px;
+  left: 10px;
+  width: 50%;
+  transform: translate(-20%, -20%);
+}
+.member-image-container-groom-even::before {
+  bottom: 10px;
+  left: 10px;
+  background-image: url(/images/light-purple-flowers-sprouting-down-right.webp);
+  aspect-ratio: 289/517;
+  height: 50%;
+  transform: translate(12%, 21%) rotate(-37deg);
+}
 .member-name {
   font-size: 1.6em;
 }
