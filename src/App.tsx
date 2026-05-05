@@ -8,7 +8,7 @@ import RSVP from "@/components/RSVP";
 import Registry from "@/components/Registry";
 import Schedule from "@/components/Programme";
 import Travel from "@/components/Travel";
-import WeddingParty from "@/components/WeddingParty";
+import { WeddingParty } from "@/components/WeddingParty";
 import { WhatToExpect } from "@/components/WhatToExpect";
 import { WhereToStay } from "@/components/WhereToStay";
 
