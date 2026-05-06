@@ -45,9 +45,28 @@
 }
 .member-name {
   font-size: 1.6em;
+  margin: 0 auto 0.25em;
+  position: relative;
+  display: inline-block;
+}
+.member-name::after {
+  content: "";
+  display: block;
+  width: 5em;
+  height: 0.1rem;
+  background-color: var(--grey-orange);
+  position: relative;
+  top: 0.5em;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .member-role {
   font-size: 1.2em;
+  margin-bottom: 0;
+}
+.member-footer {
+  aspect-ratio: 276 / 73;
+  height: 3em;
 }
 
 .embla {
@@ -63,6 +82,7 @@
 }
 .embla__viewport {
   overflow: hidden;
+  margin-bottom: 1em;
 }
 .embla__container {
   display: flex;

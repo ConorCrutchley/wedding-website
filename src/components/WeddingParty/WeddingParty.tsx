@@ -2,6 +2,7 @@ import ContentSection from "@/components/ContentSection";
 import DotButton from "./Buttons/DotButton";
 import NextButton from "./Buttons/NextButton";
 import PrevButton from "./Buttons/PrevButton";
+import bluePetals from "@/assets/blue-petals-on-golden-rod.webp";
 import sections from "@/constants/sections.json";
 import styles from "@/styles/wedding-party.module.css";
 import { useDotButton } from "@/hooks/useDotButton";
@@ -52,6 +53,11 @@ const WeddingParty = () => {
                   </div>
                   <p className={styles["member-name"]}>{member.name}</p>
                   <p className={styles["member-role"]}>{member.role}</p>
+                  <img
+                    src={bluePetals}
+                    alt="blue petals on golden rod"
+                    className={styles["member-footer"]}
+                  />
                 </div>
               );
             })}
