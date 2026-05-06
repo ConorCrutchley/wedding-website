@@ -77,7 +77,7 @@
 }
 .embla__controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: 0.5rem;
 }
@@ -96,11 +96,10 @@
   height: 2.5rem;
   z-index: 1;
   border-radius: 50%;
-  /* color: var(--text-body); */
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: auto;
+  min-width: 2.5rem;
 }
 .embla__button__svg {
   width: 40%;
@@ -116,9 +115,9 @@
 .embla__dots {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
-  margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
+  gap: 0.5rem;
 }
 .embla__dot {
   -webkit-tap-highlight-color: var(--grey-purple);
@@ -132,8 +131,9 @@
   border: 0;
   padding: 0;
   margin: 0;
-  width: 2.6rem;
-  height: 2.6rem;
+  min-width: auto;
+  width: 1.5rem;
+  height: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
