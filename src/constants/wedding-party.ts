@@ -1,8 +1,8 @@
-import eni from "@/assets/wedding-party/eni.jpeg";
-import esther from "@/assets/wedding-party/esther.jpeg";
-import hannah from "@/assets/wedding-party/hannah.jpeg";
-import james from "@/assets/wedding-party/james.jpeg";
-import kemi from "@/assets/wedding-party/kemi.jpeg";
+import eni from "@/assets/wedding-party/eni.webp";
+import esther from "@/assets/wedding-party/esther.webp";
+import hannah from "@/assets/wedding-party/hannah.webp";
+import james from "@/assets/wedding-party/james.webp";
+import kemi from "@/assets/wedding-party/kemi.webp";
 import placeholder from "@/assets/wedding-party/person-placeholder.webp";
 
 export const weddingParty = [
