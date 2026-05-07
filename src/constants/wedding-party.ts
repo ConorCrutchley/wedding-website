@@ -1,9 +1,13 @@
+import ellen from "@/assets/wedding-party/ellen.webp";
 import eni from "@/assets/wedding-party/eni.webp";
 import esther from "@/assets/wedding-party/esther.webp";
 import hannah from "@/assets/wedding-party/hannah.webp";
 import james from "@/assets/wedding-party/james.webp";
 import kemi from "@/assets/wedding-party/kemi.webp";
+import lewis from "@/assets/wedding-party/lewis.webp";
+import owen from "@/assets/wedding-party/owen.webp";
 import placeholder from "@/assets/wedding-party/person-placeholder.webp";
+import surdeep from "@/assets/wedding-party/surdeep.webp";
 
 export const weddingParty = [
   {
@@ -15,7 +19,7 @@ export const weddingParty = [
   {
     name: "Owen",
     role: "Best Man",
-    image: placeholder,
+    image: owen,
     team: "groom",
   },
   {
@@ -27,13 +31,13 @@ export const weddingParty = [
   {
     name: "Lewis",
     role: "Chief Groomsmen",
-    image: placeholder,
+    image: lewis,
     team: "groom",
   },
   {
     name: "Ellen",
     role: "Bridesmaid",
-    image: placeholder,
+    image: ellen,
     team: "bride",
   },
   {
@@ -64,7 +68,7 @@ export const weddingParty = [
   {
     name: "Surdeep",
     role: "Groomsman",
-    image: placeholder,
+    image: surdeep,
     team: "groom",
   },
   {
