@@ -8,6 +8,7 @@ import lewis from "@/assets/wedding-party/lewis.webp";
 import owen from "@/assets/wedding-party/owen.webp";
 import placeholder from "@/assets/wedding-party/person-placeholder.webp";
 import surdeep from "@/assets/wedding-party/surdeep.webp";
+import toluwa from "@/assets/wedding-party/toluwa.webp";
 
 export const weddingParty = [
   {
@@ -43,7 +44,7 @@ export const weddingParty = [
   {
     name: "Toluwa",
     role: "Groomsman",
-    image: placeholder,
+    image: toluwa,
     team: "groom",
   },
   {
