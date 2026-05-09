@@ -3,6 +3,7 @@ import eni from "@/assets/wedding-party/eni.webp";
 import esther from "@/assets/wedding-party/esther.webp";
 import hannah from "@/assets/wedding-party/hannah.webp";
 import james from "@/assets/wedding-party/james.webp";
+import jounier from "@/assets/wedding-party/jounier.webp";
 import kemi from "@/assets/wedding-party/kemi.webp";
 import lewis from "@/assets/wedding-party/lewis.webp";
 import owen from "@/assets/wedding-party/owen.webp";
@@ -81,7 +82,7 @@ export const weddingParty = [
   {
     name: "Jounier",
     role: "Groomsman",
-    image: placeholder,
+    image: jounier,
     team: "groom",
   },
   {
