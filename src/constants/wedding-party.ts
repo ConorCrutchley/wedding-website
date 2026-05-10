@@ -1,3 +1,4 @@
+import doyin from "@/assets/wedding-party/doyin.webp";
 import ellen from "@/assets/wedding-party/ellen.webp";
 import eni from "@/assets/wedding-party/eni.webp";
 import esther from "@/assets/wedding-party/esther.webp";
@@ -15,7 +16,7 @@ export const weddingParty = [
   {
     name: "Doyin",
     role: "Chief Bridesmaid",
-    image: placeholder,
+    image: doyin,
     team: "bride",
   },
   {
