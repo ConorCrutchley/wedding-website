@@ -8,9 +8,11 @@ import jounier from "@/assets/wedding-party/jounier.webp";
 import kemi from "@/assets/wedding-party/kemi.webp";
 import lewis from "@/assets/wedding-party/lewis.webp";
 import owen from "@/assets/wedding-party/owen.webp";
-import placeholder from "@/assets/wedding-party/person-placeholder.webp";
+import simi from "@/assets/wedding-party/simi.webp";
 import surdeep from "@/assets/wedding-party/surdeep.webp";
 import toluwa from "@/assets/wedding-party/toluwa.webp";
+
+// import placeholder from "@/assets/wedding-party/person-placeholder.webp";
 
 export const weddingParty = [
   {
@@ -89,7 +91,7 @@ export const weddingParty = [
   {
     name: "Simi",
     role: "Bridesmaid",
-    image: placeholder,
+    image: simi,
     team: "bride",
   },
 ];
