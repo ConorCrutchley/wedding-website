@@ -37,10 +37,10 @@ const AboutUs = () => {
       <hr />
       <h3>What was your most memorable date?</h3>
       <p>
-        There's so many to choose from, we love to going out and doing new
-        things. We always talk about our first date though. We went to Zizzi's
-        in the mailbox and got chatting over some great food. We were both
-        nervous, Tobi was even doing a nervous dance in between each bite.
+        There's so many to choose from, we love going out and doing new things.
+        We always talk about our first date though. We went to Zizzi's in the
+        mailbox and got chatting over some great food. We were both nervous,
+        Tobi was even doing a nervous dance in between each bite.
       </p>
       <p>
         We soon warmed to each other though, and things got competitive when we
@@ -56,7 +56,7 @@ const AboutUs = () => {
         goodnight.
       </p>
       <p>
-        I must have done something right on that first date as she agreed so a
+        I must have done something right on that first date as she agreed to a
         second... and a third... and a fourth... and here we are!
       </p>
       <hr />

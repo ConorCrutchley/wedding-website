@@ -37,9 +37,9 @@ const Travel = () => {
       </p>
       <p>
         There are car parks on retail parks and paid parking options nearby.
-        However, we recommend booking and hotel and parking on the car park
-        there. The Premier Inn nearby has free parking for hotel guests. You can
-        find out more about nearby hotels in the{" "}
+        However, we recommend booking a hotel and parking on the car park there.
+        The Premier Inn nearby has free parking for hotel guests. You can find
+        out more about nearby hotels in the{" "}
         <a
           href={`#${sections["where-to-stay"]}`}
           onClick={(e) => {
@@ -117,7 +117,7 @@ const Travel = () => {
         London is home to a few airports. The one closest to the venue is
         Gatwick and it should take roughly half an hour via car/taxi to get to
         the venue from here. The most popular airport would be Heathrow.
-        Travelling from Heathrow should talke less than 1 hour via car/taxi.
+        Travelling from Heathrow should take less than 1 hour via car/taxi.
       </p>
       <hr />
       <h3>Things to do</h3>
