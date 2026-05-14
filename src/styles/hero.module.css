@@ -27,20 +27,31 @@ img.hero-hexagons {
     fade-in 4s ease-in-out 0s 1,
     ring-breathe 30s infinite 0s ease-in-out;
 }
-.hero-section h1 {
+.hero-section h1,
+.hero-section p {
   position: relative;
   z-index: 1;
   text-align: center;
   display: block;
+  animation: fade-in 5.5s ease-in-out 0s 1;
+}
+.hero-section h1 {
   max-width: 135px;
   font-size: 3.5rem;
   line-height: 0.89;
-  animation: fade-in 5.5s ease-in-out 0s 1;
+  margin-block-end: 0;
+}
+.hero-section p {
+  margin-block-start: 0.5rem;
+  font-size: 1.75rem;
 }
 @media (min-width: 48rem) {
   .hero-section h1 {
     max-width: 185px;
     font-size: 5rem;
+  }
+  .hero-section p {
+    font-size: 2.5rem;
   }
 }
 @keyframes fade-in {

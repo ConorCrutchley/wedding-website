@@ -53,7 +53,8 @@ h5,
 h6 {
   font-weight: 400;
 }
-h1 {
+h1,
+.h1 {
   font-family: "Alex Brush", "Roxborough CF", system-ui;
   color: var(--grey-purple);
 }

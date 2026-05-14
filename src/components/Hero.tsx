@@ -16,7 +16,8 @@ const Hero = () => {
         alt="Gold hexagons with flowers"
         className={styles["hero-hexagons"]}
       />
-      <h1>Tobi &amp; Conor</h1>
+      <h1>Tobi &amp; Conor&apos;s</h1>
+      <p className="h1">Traditional Wedding</p>
     </section>
   );
 };
