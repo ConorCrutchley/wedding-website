@@ -18,6 +18,25 @@ const FAQs = () => {
           <strong>)</strong>, while non-Nigerian guests are welcome to wear any
           wedding attire including aso ebi if they wish.
         </p>
+        <p>If you have aso ebi, we suggest the following colours if you can:</p>
+        <ul>
+          <li>
+            Young female guests are encouraged to wear dusty pink aso ebi.
+          </li>
+          <li>Older female guests are encouraged to wear baby pink aso ebi.</li>
+          <li>
+            Male guests are encouraged to wear white kaftans or agbadas with
+            dusty pink filas and scarfs.
+          </li>
+        </ul>
+        <p>
+          If you don't have aso ebi in these colurs, you can wear the colour of
+          your choice.
+        </p>
+        <p>
+          If you don't have aso ebi, you're welcome to wear a suit, dress, or
+          formal outfit in the colours mentioned above or your choice.
+        </p>
       </details>
       <details open>
         <summary>Do I have to wear traditional Nigerian clothing?</summary>
@@ -30,9 +49,14 @@ const FAQs = () => {
         <summary>What is aso ebi? Can I buy it?</summary>
         <p>
           Aso ebi is a collection of coordinated outfits worn by family members,
-          friends, and specific groups for an occasion. If you've been invited
-          to wear aso ebi, you'll be contacted directly. If not, feel free to
-          wear any formal outfit.
+          friends, and specific groups for an occasion.
+        </p>
+        <p>
+          A number of guests have been invited to buy aso ebi to wear at the
+          wedding. If you're interested in buying aso ebi, please email{" "}
+          <a href="mailto:tobiandconorwedding@gmail.com">
+            tobiandconorwedding@gmail.com
+          </a>
         </p>
       </details>
       <hr />
