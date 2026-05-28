@@ -47,8 +47,8 @@ export const hotels: Hotel[] = [
     description: (
       <p>
         If you would like to stay at the wedding venue hotel, please call{" "}
-        <a href="tel:02086862905">02086862905</a> and ask to be connected to the
-        reservations team. Please provide the reference number{" "}
+        <a href="tel:02086862905">020 8686 2905</a> and ask to be connected to
+        the reservations team. Please provide the reference number{" "}
         <strong>VAO31026</strong> to receive a 10% discount when completing your
         booking.
       </p>

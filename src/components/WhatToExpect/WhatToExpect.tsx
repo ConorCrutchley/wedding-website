@@ -28,7 +28,7 @@ const WhatToExpect = () => {
         just two people, but two families, communities, and histories. While
         customs vary between tribes such as the Yoruba people, Igbo people, and
         Hausa people, traditional weddings across Nigeria are rooted in respect,
-        family unity, symbolism, music, food, and joyful celebration.
+        family unity, symbolism, music, food, and joyous celebration.
       </p>
       <p>
         Unlike many Western weddings, a traditional Nigerian wedding is often
@@ -37,6 +37,7 @@ const WhatToExpect = () => {
         interactive, with guests playing an active role through singing,
         dancing, prayers, money spraying, and participation in cultural customs.
       </p>
+      <hr />
       <h3>Why We Do It From a Cultural Perspective</h3>
       <p>The ceremony serves several important purposes:</p>
       <ul>
@@ -49,29 +50,35 @@ const WhatToExpect = () => {
           celebration.
         </li>
         <li>
-          <strong>Honouring Heritage</strong>Traditional attire, language,
-          music, food, and customs help preserve cultural identity and pass
-          traditions down through generations, especially for families living
-          outside of Nigeria.
+          <strong>Honouring Heritage</strong>
+          <br />
+          Traditional attire, language, music, food, and customs help preserve
+          cultural identity and pass traditions down through generations,
+          especially for families living outside of Nigeria.
         </li>
         <li>
-          <strong>Showing Respect and Intentions</strong>Many ceremonies include
-          symbolic gestures from the groom and his family to show respect,
-          gratitude, and commitment to the bride and her family. This includes
-          formal introductions, gifts, and prayers.
+          <strong>Showing Respect and Intentions</strong>
+          <br />
+          Many ceremonies include symbolic gestures from the groom and his
+          family to show respect, gratitude, and commitment to the bride and her
+          family. This includes formal introductions, gifts, and prayers.
         </li>
         <li>
-          <strong>Celebrating Culture</strong>Traditional weddings are known for
-          their energy and hospitality. Weddings are often large events where
-          friends, family, and the wider community come together to celebrate
-          publicly and joyfully.
+          <strong>Celebrating Culture</strong>
+          <br />
+          Traditional weddings are known for their energy and hospitality.
+          Weddings are often large events where friends, family, and the wider
+          community come together to celebrate publicly and joyfully.
         </li>
         <li>
-          <strong>Blessing the Marriage</strong>Elders often give prayers,
-          advice, and blessings to the couple, reflecting the importance of
-          wisdom, family support, and spiritual guidance within the marriage.
+          <strong>Blessing the Marriage</strong>
+          <br />
+          Elders often give prayers, advice, and blessings to the couple,
+          reflecting the importance of wisdom, family support, and spiritual
+          guidance within the marriage.
         </li>
       </ul>
+      <hr />
       <h3>The Ceremony</h3>
       <p>
         The ceremony is vibrant, symbolic, and full of prayer, music, and
@@ -127,9 +134,9 @@ const WhatToExpect = () => {
       >
         <h4>Groom's Entrance</h4>
         <p>
-          The groom enters with his groomsmen, dancing joyfully. As a sign of
-          respect to the bride's family and elders, they remove their filas{" "}
-          <strong>(</strong>hats<strong>)</strong>.
+          The groom enters with his groomsmen, dancing enthusiastically. As a
+          sign of respect to the bride's family and elders, they remove their
+          filas <strong>(</strong>hats<strong>)</strong>.
         </p>
       </WhatToExpectItem>
       <WhatToExpectItem

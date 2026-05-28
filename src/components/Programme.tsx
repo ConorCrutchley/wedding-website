@@ -11,7 +11,7 @@ const Schedule = () => {
       </p>
       <ol>
         <li>Entrance of the Bride's Family</li>
-        <li>Entrance of the Grooms's Family</li>
+        <li>Entrance of the Groom's Family</li>
         <li>Opening Prayer</li>
         <li>Opening Hymn</li>
         <li>Introduction of both Parents</li>

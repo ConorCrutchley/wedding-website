@@ -21,7 +21,11 @@ const RSVP = () => {
           alt="Dark purple flowers lying down on front"
           className={`${styles["rsvp-img"]} ${styles["rsvp-img-bottom-right"]}`}
         />
-        <h2>Saturday, October 3rd, 2026</h2>
+        <h2>
+          Saturday, October 3rd, 2026
+          <br />
+          3:00pm
+        </h2>
         {currentDate > rsvpDate ? (
           <p>
             <u>

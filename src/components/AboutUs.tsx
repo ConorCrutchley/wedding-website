@@ -17,8 +17,8 @@ const AboutUs = () => {
       <h3>How did you first meet?</h3>
       <p>
         We first met on Hinge. One of Tobi's prompts was that she's born on the
-        29th February. I always wondered when leap year babies celebrate their
-        birthday, so I started the conversation asking just that... and we
+        29th of February. I always wondered when leap year babies celebrate
+        their birthday, so I started the conversation asking just that... and we
         haven't stopped talking since.
       </p>
       <p>
@@ -27,7 +27,7 @@ const AboutUs = () => {
         for no 29th of February in those years.
       </p>
       <hr />
-      <h3>Who made the first move? How?</h3>
+      <h3>Who made the first move and how?</h3>
       <p>
         Conor made the first move. We started talking on Hinge around Christmas,
         and I asked him if he had any new years resolutions. He said "My main
@@ -39,8 +39,8 @@ const AboutUs = () => {
       <p>
         There's so many to choose from, we love going out and doing new things.
         We always talk about our first date though. We went to Zizzi's in the
-        mailbox and got chatting over some great food. We were both nervous,
-        Tobi was even doing a nervous dance in between each bite.
+        mailbox in Birmingham and got chatting over some great food. We were
+        both nervous, Tobi was even doing a nervous dance in between each bite.
       </p>
       <p>
         We soon warmed to each other though, and things got competitive when we

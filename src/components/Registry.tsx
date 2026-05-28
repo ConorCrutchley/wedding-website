@@ -9,7 +9,7 @@ const Registry = () => {
       <p>
         Your presence at our wedding is the greatest gift we could ask for. If
         you'd like to give something extra, we've created a fund for our
-        Caribbean cruise and our first home.
+        honeymoon travelling on a Caribbean cruise and for our first home.
       </p>
       <p>
         Contributions will help us enjoy special dinners, cocktails on deck,

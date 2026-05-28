@@ -26,16 +26,17 @@ const FAQs = () => {
           <li>Older female guests are encouraged to wear baby pink aso ebi.</li>
           <li>
             Male guests are encouraged to wear white kaftans or agbadas with
-            dusty pink filas and scarfs.
+            dusty pink filas and scarves.
           </li>
         </ul>
         <p>
-          If you don't have aso ebi in these colurs, you can wear the colour of
+          If you don't have aso ebi in these colours, you can wear the colour of
           your choice.
         </p>
         <p>
           If you don't have aso ebi, you're welcome to wear a suit, dress, or
-          formal outfit in the colours mentioned above or your choice.
+          formal outfit in the colours mentioned above or in the colour of your
+          choice.
         </p>
       </details>
       <details open>
@@ -66,9 +67,9 @@ const FAQs = () => {
       <details open>
         <summary>Will guests be expected to participate?</summary>
         <p>
-          Yes... in the best way! Nigerian weddings are very interactive. There
-          will be music, dancing, and moments where guests are encouraged to
-          join in. Don't worry, just follow the crowd and enjoy.
+          Yes... in the best way! Traditional weddings are very interactive.
+          There will be music, dancing, and moments where guests are encouraged
+          to join in. Don't worry, just follow the crowd and enjoy.
         </p>
       </details>
       <details open>
@@ -146,8 +147,9 @@ const FAQs = () => {
         <summary>Is there a gift registry?</summary>
         <p>
           Yes, we have a gift registry where you can make contributions towards
-          our honeymoon and our adventures we will have or you can contribute to
-          our first home. More details can be found in the{" "}
+          the adventures we will have on our honeymoon and the honeymoon itself,
+          or you can contribute to our first home. More details can be found in
+          the{" "}
           <a
             href={`#${sections["registry"]}`}
             onClick={(e) => {
@@ -182,7 +184,7 @@ const FAQs = () => {
           I've never been to a Nigerian wedding, what if I do something wrong?
         </summary>
         <p>
-          You won't! Nigerian weddings are warm, joyful, and welcoming. If
+          You won't! Traditional weddings are warm, upbeat, and welcoming. If
           you're unsure about anything, please feel free to ask and follow the
           lead of those around you. The most important thing is that you enjoy
           yourself and join us in celebrating.
