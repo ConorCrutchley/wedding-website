@@ -10,7 +10,17 @@ const HotelItem = ({ hotel }: { hotel: Hotel }) => {
       <div className={styles["hotel-image"]}>
         <img src={hotel.images[0]} alt={hotel.name} />
       </div>
-      <h4 className="h4">{hotel.name}</h4>
+      <div>
+        <h4 className="h4">{hotel.name}</h4>
+        <address className={styles["hotel-location"]}>
+          <p>
+            {hotel.address.property},<br />
+            {hotel.address.city},<br />
+            {hotel.address.postcode},<br />
+            {hotel.address.country}
+          </p>
+        </address>
+      </div>
       <div className={styles["hotel-stats"]}>
         <span>
           {/* Add a star for each rating */}
@@ -24,7 +34,7 @@ const HotelItem = ({ hotel }: { hotel: Hotel }) => {
           {hotel.location.walkTime} Min
         </span>
       </div>
-      <p>{hotel.description}</p>
+      {hotel.description}
       <div className={styles["hotel-prices"]}>
         <span>
           <strong>Starting From</strong>
@@ -37,10 +47,19 @@ const HotelItem = ({ hotel }: { hotel: Hotel }) => {
               fill="rgb(0, 146, 137)"
             />
           </span>
-          <span>&pound;{hotel.discountedPrice} / night</span>
+          <span>
+            &pound;
+            {`${hotel.discountedPrice}`.match(/\./g)
+              ? hotel.discountedPrice.toFixed(2)
+              : hotel.discountedPrice}{" "}
+            / night
+          </span>
           <span className={styles["price-savings"]}>
             <span className={styles["full-price"]}>
-              &pound;{hotel.fullPrice}
+              &pound;
+              {`${hotel.fullPrice}`.match(/\./g)
+                ? hotel.fullPrice.toFixed(2)
+                : hotel.fullPrice}
             </span>
             <span className={styles["save-badge"]}>
               Save{" "}

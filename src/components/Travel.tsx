@@ -16,10 +16,10 @@ const Travel = () => {
       <address>
         <p>
           {venue.venueName},<br />
-          {venue.property},<br />
-          {venue.city},<br />
-          {venue.postcode},<br />
-          {venue.country}
+          {venue.address.property},<br />
+          {venue.address.city},<br />
+          {venue.address.postcode},<br />
+          {venue.address.country}
         </p>
       </address>
       <hr />

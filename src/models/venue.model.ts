@@ -1,10 +1,6 @@
-import type { LatLngTuple } from "leaflet";
+import type { Address } from "./address.model";
 
 export interface Venue {
   venueName: string;
-  property: string;
-  city: string;
-  postcode: string;
-  country: string;
-  coordinates: LatLngTuple;
+  address: Address;
 }

@@ -6,6 +6,9 @@
 .hotel-image img {
   border-radius: 0.5rem;
 }
+.hotel-location p {
+  margin: 0;
+}
 .hotel-stats,
 .hotel-stats span {
   display: flex;

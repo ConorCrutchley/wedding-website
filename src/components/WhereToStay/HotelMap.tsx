@@ -12,6 +12,9 @@ import styles from "@/styles/where-to-stay/hotel-map.module.css";
 import { venue } from "@/constants/venue";
 
 const HotelMap = () => {
+  const filteredHotels = hotels.filter(
+    (hotel) => hotel.id !== "grand-sapphire",
+  );
   const [mapParamsLoaded, setMapParamsLoaded] = useState(false);
   const [markerParams, setMarkerParams] = useState<L.DivIconOptions>({
     iconSize: [110, 143],
@@ -73,20 +76,20 @@ const HotelMap = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={venue.coordinates} icon={venueIcon}>
+          <Marker position={venue.address.coordinates} icon={venueIcon}>
             <Popup>
               {venue.venueName},
               <br />
-              {venue.property},
+              {venue.address.property},
               <br />
-              {venue.city},
+              {venue.address.city},
               <br />
-              {venue.postcode},
+              {venue.address.postcode},
               <br />
-              {venue.country}
+              {venue.address.country}
             </Popup>
           </Marker>
-          {hotels.map((hotel) => {
+          {filteredHotels.map((hotel) => {
             const hotelIconElement = (
               <>
                 <p>{hotel.shortName}</p>

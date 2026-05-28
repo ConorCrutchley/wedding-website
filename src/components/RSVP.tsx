@@ -32,10 +32,10 @@ const RSVP = () => {
           <>
             <address className={styles["rsvp-address"]}>
               <p className="h3">{venue.venueName},</p>
-              <p className="h3">{venue.property},</p>
-              <p className="h3">{venue.city},</p>
-              <p className="h3">{venue.postcode},</p>
-              <p className="h3">{venue.country}</p>
+              <p className="h3">{venue.address.property},</p>
+              <p className="h3">{venue.address.city},</p>
+              <p className="h3">{venue.address.postcode},</p>
+              <p className="h3">{venue.address.country}</p>
             </address>
             <p>Please submit your RSVP by {rsvpDateString}.</p>
             <a

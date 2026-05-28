@@ -1,3 +1,4 @@
+import type { Address } from "./address.model";
 import type { LatLngTuple } from "leaflet";
 
 export interface Hotel {
@@ -13,6 +14,7 @@ export interface Hotel {
   fullPrice: number;
   discountedPrice: number;
   images: string[];
-  description: string;
+  description: React.ReactNode;
   link: string;
+  address: Address;
 }
