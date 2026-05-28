@@ -8,7 +8,7 @@ const Travel = () => {
     <ContentSection id={sections["travel"]}>
       <h2>Travel</h2>
       <p>
-        If you're unfamiliar with the area, we have wrote some helpful tips on
+        If you're unfamiliar with the area, we have written some helpful tips on
         how to get around the area below, and what you can do whilst you're in
         town.
       </p>
@@ -32,14 +32,10 @@ const Travel = () => {
         <li>2.5 - 3 hours from Birmingham</li>
       </ul>
       <p>
-        There is limited parking at the venue which is reserved for the wedding
-        party and immediate family members of the bride and groom.
-      </p>
-      <p>
-        There are car parks on retail parks and paid parking options nearby.
-        However, we recommend booking a hotel and parking on the car park there.
-        The Premier Inn nearby has free parking for hotel guests. You can find
-        out more about nearby hotels in the{" "}
+        There is limited parking at the venue, there are up to 30 spaces
+        available on a first come, first served basis. There is street parking
+        and paid parking options near the venue, and hotels nearby with free
+        parking for guests. You can find out more about nearby hotels in the{" "}
         <a
           href={`#${sections["where-to-stay"]}`}
           onClick={(e) => {
@@ -129,9 +125,9 @@ const Travel = () => {
       </p>
       <h4>Sites to See</h4>
       <p>
-        There are plenty of sites to see and places to visit not just in London
-        but in Croydon as well. Here are our top picks for places to visit while
-        you're here:
+        There are plenty of sites to see and places to visit not just in Central
+        London but in Croydon as well. Here are our top picks for places to
+        visit while you're here:
       </p>
       <ul>
         <li>
@@ -265,7 +261,7 @@ const Travel = () => {
           </a>
           <br />
           Near to the venue and ideal for young kids, Kidspace offers
-          interavtive sandboxes for the very young, play areas for toddlers and
+          interactive sandboxes for the very young, play areas for toddlers and
           older kids, and for the more adventurous there's rock climbing, go
           karting, laser tag, and drone flying.
         </li>
@@ -293,7 +289,7 @@ const Travel = () => {
           </a>
           <br />
           With missions for kids aged 6-7, 8-14, and for adults and families
-          too, anyone can live our their James Bond fantasies here and undertake
+          too, anyone can live out their James Bond fantasies here and undertake
           in a mission of their own.
         </li>
       </ul>
