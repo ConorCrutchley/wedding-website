@@ -11,7 +11,7 @@ const HotelItem = ({ hotel }: { hotel: Hotel }) => {
         <img src={hotel.images[0]} alt={hotel.name} />
       </div>
       <div>
-        <h4 className="h4">{hotel.name}</h4>
+        <h4 className="h5">{hotel.name}</h4>
         <address className={styles["hotel-location"]}>
           <p>
             {hotel.address.property},<br />

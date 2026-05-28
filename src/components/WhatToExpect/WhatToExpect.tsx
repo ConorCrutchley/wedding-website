@@ -18,9 +18,61 @@ const WhatToExpect = () => {
       <h2>What to Expect</h2>
       <p>
         For many guests, and even the groom, this will be their first
-        traditional Nigerian wedding. These guests may be wondering what will
-        happen on the day?
+        traditional Nigerian wedding. These guests may be wondering what is a
+        traditional wedding, why we do it from a cultural perspective, and what
+        will happen on the day?
       </p>
+      <h3>What is a Traditional Wedding?</h3>
+      <p>
+        A traditional wedding is a vibrant celebration that brings together not
+        just two people, but two families, communities, and histories. While
+        customs vary between tribes such as the Yoruba people, Igbo people, and
+        Hausa people, traditional weddings across Nigeria are rooted in respect,
+        family unity, symbolism, music, food, and joyful celebration.
+      </p>
+      <p>
+        Unlike many Western weddings, a traditional Nigerian wedding is often
+        less focused on a single ceremony and more focused on honouring heritage
+        and formally uniting families. It is colourful, lively, and highly
+        interactive, with guests playing an active role through singing,
+        dancing, prayers, money spraying, and participation in cultural customs.
+      </p>
+      <h3>Why We Do It From a Cultural Perspective</h3>
+      <p>The ceremony serves several important purposes:</p>
+      <ul>
+        <li>
+          <strong>Uniting Families</strong>
+          <br />
+          Marriage is traditionally seen as a union between families rather than
+          just the bride and groom. Parents, elders, extended relatives, and
+          family friends all play an important role in the process and
+          celebration.
+        </li>
+        <li>
+          <strong>Honouring Heritage</strong>Traditional attire, language,
+          music, food, and customs help preserve cultural identity and pass
+          traditions down through generations, especially for families living
+          outside of Nigeria.
+        </li>
+        <li>
+          <strong>Showing Respect and Intentions</strong>Many ceremonies include
+          symbolic gestures from the groom and his family to show respect,
+          gratitude, and commitment to the bride and her family. This includes
+          formal introductions, gifts, and prayers.
+        </li>
+        <li>
+          <strong>Celebrating Culture</strong>Traditional weddings are known for
+          their energy and hospitality. Weddings are often large events where
+          friends, family, and the wider community come together to celebrate
+          publicly and joyfully.
+        </li>
+        <li>
+          <strong>Blessing the Marriage</strong>Elders often give prayers,
+          advice, and blessings to the couple, reflecting the importance of
+          wisdom, family support, and spiritual guidance within the marriage.
+        </li>
+      </ul>
+      <h3>The Ceremony</h3>
       <p>
         The ceremony is vibrant, symbolic, and full of prayer, music, and
         celebration. Here's a simple guide to what will happen on the day.
@@ -31,7 +83,7 @@ const WhatToExpect = () => {
           alt: "family in blue and silver aso ebi entering a wedding",
         }}
       >
-        <h3>Family Entrances</h3>
+        <h4>Family Entrances</h4>
         <p>
           Both families make their entrance accompanied by singing, dancing, and
           talking drums. Formal introductions are made as each family is
@@ -45,7 +97,7 @@ const WhatToExpect = () => {
           position: "left",
         }}
       >
-        <h3>Proposal Letter</h3>
+        <h4>Proposal Letter</h4>
         <p>
           A ceremonial letter is read on behalf of the groom's family, usually
           by the family head or appointed representative. The letter formally
@@ -58,9 +110,9 @@ const WhatToExpect = () => {
           alt: "hand holding a wooden tablet with a golden letter",
         }}
       >
-        <h3>
+        <h4>
           Response <strong>(</strong>Kíkà Letter<strong>)</strong>
-        </h3>
+        </h4>
         <p>
           A member of the bride's family responds by reading an acceptance
           letter, acknowledging the proposal and welcoming the groom's family.
@@ -73,7 +125,7 @@ const WhatToExpect = () => {
           position: "left",
         }}
       >
-        <h3>Groom's Entrance</h3>
+        <h4>Groom's Entrance</h4>
         <p>
           The groom enters with his groomsmen, dancing joyfully. As a sign of
           respect to the bride's family and elders, they remove their filas{" "}
@@ -86,9 +138,9 @@ const WhatToExpect = () => {
           alt: "groom and groomsmen lying on the floor at the feet of the brides family",
         }}
       >
-        <h3>
+        <h4>
           Ìdobálè <strong>(</strong>Prostration<strong>)</strong>
-        </h3>
+        </h4>
         <p>
           The groom, supported by his groomsmen, prostrates fully on the floor
           before the bride's family. This act symbolises humility, respect for
@@ -102,7 +154,7 @@ const WhatToExpect = () => {
           position: "left",
         }}
       >
-        <h3>Bride's Entrance</h3>
+        <h4>Bride's Entrance</h4>
         <p>
           The bride enters with her bridesmaids and friends, accompanied by
           singing, dancing, and enthusiastic cheering.
@@ -114,7 +166,7 @@ const WhatToExpect = () => {
           alt: "bride and her mother under the brides veil embracing",
         }}
       >
-        <h3>Veiling & Blessings</h3>
+        <h4>Veiling & Blessings</h4>
         <p>
           The bride appears fully veiled, symbolising modesty and honour. Once
           she reaches her family, she stands with her mother under the veil
@@ -129,9 +181,9 @@ const WhatToExpect = () => {
           position: "left",
         }}
       >
-        <h3>
+        <h4>
           Èrù Ìyàwó <strong>(</strong>Bride's Gifts<strong>)</strong>
-        </h3>
+        </h4>
         <p>
           The groom's family presents gifts to the bride's family as a token of
           appreciation for raising her well. In Nigerian culture, a child is
@@ -145,7 +197,7 @@ const WhatToExpect = () => {
           alt: "bride and bridesmaids kneeling and praying",
         }}
       >
-        <h3>Prayers & Joining the Couple</h3>
+        <h4>Prayers & Joining the Couple</h4>
         <p>
           Both families pray over the couple for fertility, prosperity,
           longevity, and peace. The bride is then formally joined with the
@@ -159,7 +211,7 @@ const WhatToExpect = () => {
           position: "left",
         }}
       >
-        <h3>Live Band & Celebration</h3>
+        <h4>Live Band & Celebration</h4>
         <p>
           A live band provides music throughout the ceremony, praising the
           couple and guests. Guests often “spray” money <strong>(</strong>
