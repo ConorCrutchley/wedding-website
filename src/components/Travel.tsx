@@ -65,12 +65,12 @@ const Travel = () => {
         .
       </p>
       <hr />
-      <h3>By Train</h3>
+      <h3>By Public Transport</h3>
       <p>
         For those travelling from the Midlands or other areas of the UK, the
         easiest train to catch will be the train to London Euston. From there,
-        it will take just over 1 hour to get to the venue. If you take the tube,
-        the simplest route will be:
+        it will take just over 1 hour to get to the venue. Here are some routes
+        you could use travel to the venue:
       </p>
       <ul>
         <li>To take the Victoria line to Brixton from Euston Station.</li>
@@ -78,7 +78,7 @@ const Travel = () => {
           Get off at Victoria station <strong>(</strong>this will be 4 stops
           <strong>)</strong>.
         </li>
-        <li>Take the Southern line to Epsom Downs.</li>
+        <li>Take the Southern train to Epsom Downs.</li>
         <li>
           Get off at Waddon station <strong>(</strong>this will be 10 stops
           <strong>)</strong>.
@@ -96,10 +96,10 @@ const Travel = () => {
           Get off at London Bridge station <strong>(</strong>this will be 6
           stops<strong>)</strong>.
         </li>
-        <li>Take the ThamesLink line to Brighton.</li>
+        <li>Take the ThamesLink train to Brighton.</li>
         <li>
-          Get off at East Croydon station <strong>(</strong>this will be
-          non-stop<strong>)</strong>.
+          Get off at East Croydon station <strong>(</strong>no stops between
+          London Bridge and East Croydon<strong>)</strong>.
         </li>
         <li>
           Take the 119 bus to Imperial Way <strong>(</strong>this will be 12
@@ -135,7 +135,7 @@ const Travel = () => {
             Natural History Museum
           </a>
           <br />A jaw-dropping museum packed with towering dinosaur skeletons,
-          sparkling gemstones, and hands-on exhibits that make science feel like
+          sparkling gemstones, and hands-on exhibits that make history feel like
           an adventure.
         </li>
         <li>

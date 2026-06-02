@@ -35,7 +35,7 @@ export const weddingParty = [
   },
   {
     name: "Lewis",
-    role: "Chief Groomsmen",
+    role: "Chief Groomsman",
     image: lewis,
     team: "groom",
   },

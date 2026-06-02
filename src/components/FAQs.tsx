@@ -18,46 +18,28 @@ const FAQs = () => {
           <strong>)</strong>, while non-Nigerian guests are welcome to wear any
           wedding attire including aso ebi if they wish.
         </p>
-        <p>If you have aso ebi, we suggest the following colours if you can:</p>
+        <p>
+          If you are not wearing aso ebi, we suggest the following colours if
+          you can:
+        </p>
         <ul>
-          <li>
-            Young female guests are encouraged to wear dusty pink aso ebi.
-          </li>
-          <li>Older female guests are encouraged to wear baby pink aso ebi.</li>
-          <li>
-            Male guests are encouraged to wear white kaftans or agbadas with
-            dusty pink filas and scarves.
-          </li>
+          <li>Young female guests are encouraged to wear dusty pink </li>
+          <li>Older female guests are encouraged to wear baby pink</li>
+          <li>Male guests are encouraged to wear a formal suit</li>
         </ul>
         <p>
-          If you don't have aso ebi in these colours, you can wear the colour of
-          your choice.
+          If you don't have clothes in the above colours, you can wear the
+          colour of your choice.
         </p>
         <p>
-          If you don't have aso ebi, you're welcome to wear a suit, dress, or
-          formal outfit in the colours mentioned above or in the colour of your
-          choice.
+          If you are not wearing aso ebi, you are welcome to wear a suit, dress
+          or formal outfit.
         </p>
       </details>
       <details open>
         <summary>Do I have to wear traditional Nigerian clothing?</summary>
         <p>
-          Not at all! You're welcome to wear a suit, dress, or formal outfit. If
-          you'd like to wear aso ebi, you absolutely can, but it's optional.
-        </p>
-      </details>
-      <details open>
-        <summary>What is aso ebi? Can I buy it?</summary>
-        <p>
-          Aso ebi is a collection of coordinated outfits worn by family members,
-          friends, and specific groups for an occasion.
-        </p>
-        <p>
-          A number of guests have been invited to buy aso ebi to wear at the
-          wedding. If you're interested in buying aso ebi, please email{" "}
-          <a href="mailto:tobiandconorwedding@gmail.com">
-            tobiandconorwedding@gmail.com
-          </a>
+          Not at all! You're welcome to wear a suit, dress, or formal outfit.
         </p>
       </details>
       <hr />
