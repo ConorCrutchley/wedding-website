@@ -3,7 +3,6 @@ import ellen from "@/assets/wedding-party/ellen.webp";
 import eni from "@/assets/wedding-party/eni.webp";
 import esther from "@/assets/wedding-party/esther.webp";
 import hannah from "@/assets/wedding-party/hannah.webp";
-import james from "@/assets/wedding-party/james.webp";
 import jounier from "@/assets/wedding-party/jounier.webp";
 import kemi from "@/assets/wedding-party/kemi.webp";
 import lewis from "@/assets/wedding-party/lewis.webp";
@@ -58,12 +57,11 @@ export const weddingParty = [
     team: "bride",
   },
   {
-    name: "James",
+    name: "Surdeep",
     role: "Groomsman",
-    image: james,
+    image: surdeep,
     team: "groom",
   },
-
   {
     name: "Kemi",
     role: "Bridesmaid",
@@ -71,9 +69,9 @@ export const weddingParty = [
     team: "bride",
   },
   {
-    name: "Surdeep",
+    name: "Jounier",
     role: "Groomsman",
-    image: surdeep,
+    image: jounier,
     team: "groom",
   },
   {
@@ -81,12 +79,6 @@ export const weddingParty = [
     role: "Bridesmaid",
     image: esther,
     team: "bride",
-  },
-  {
-    name: "Jounier",
-    role: "Groomsman",
-    image: jounier,
-    team: "groom",
   },
   {
     name: "Simi",
